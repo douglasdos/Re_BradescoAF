@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Class-Path: AdmEJB-client.jar 
+ AdmLIB-client.jar 
+ AdmWEB-client.jar 
+ AdmWEB-taglib.jar 
+ Base-war.jar 
+ Base.jar 
+ CrmEJB-client.jar 
+ CrmLIB-client.jar 
+ CrmWEB-client.jar 
+ GerenteEJB-client.jar 
+ GerenteLIB-client.jar 
+ Licenca.jar 
+ MatchCode-client.jar 
+ SSOWEB.jar 
+ plusfw-client.jar 
+ CsiWEB.jar 
+ SfaEJB-client.jar 
+ SfaLib-client.jar 
+ SfaWEB-client.jar 
+

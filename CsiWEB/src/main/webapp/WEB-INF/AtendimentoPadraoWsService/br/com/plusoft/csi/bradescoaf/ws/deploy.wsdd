@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from AtendimentoPadraoWsService WSDL service -->
+
+  <service name="AtendimentoPadraoWs" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ws.bradescoaf.csi.plusoft.com.br"/>
+      <parameter name="wsdlServiceElement" value="AtendimentoPadraoWsService"/>
+      <parameter name="schemaQualified" value="http://vo.ws.bradescoaf.csi.plusoft.com.br,http://ws.bradescoaf.csi.plusoft.com.br"/>
+      <parameter name="wsdlServicePort" value="AtendimentoPadraoWs"/>
+      <parameter name="className" value="br.com.plusoft.csi.bradescoaf.ws.AtendimentoPadraoWs"/>
+      <parameter name="wsdlPortType" value="AtendimentoPadraoWs"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:retNS="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:rtns="http://vo.ws.bradescoaf.csi.plusoft.com.br" name="recuperarListaAtendimentoPadrao" qname="operNS:recuperarListaAtendimentoPadrao" returnQName="retNS:recuperarListaAtendimentoPadraoReturn" returnType="rtns:RetornoAtendimentoPadrao" soapAction="">
+        <parameter xmlns:pns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:idEmprCdEmpresa" type="tns:long"/>
+      </operation>
+      <operation xmlns:operNS="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:retNS="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:rtns="http://vo.ws.bradescoaf.csi.plusoft.com.br" name="incluirAtendimentoPadrao" qname="operNS:incluirAtendimentoPadrao" returnQName="retNS:incluirAtendimentoPadraoReturn" returnType="rtns:RetornoInclusaoAtendimentoPadrao" soapAction="">
+        <parameter xmlns:pns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:codigoAtendimentoPadrao" type="tns:long"/>
+        <parameter xmlns:pns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:idEmprCdEmpresa" type="tns:long"/>
+        <parameter xmlns:pns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:numeroSinistro" type="tns:long"/>
+        <parameter xmlns:pns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:textoManifestacao" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="incluirAtendimentoPadrao recuperarListaAtendimentoPadrao"/>
+
+      <typeMapping xmlns:ns="http://vo.ws.bradescoaf.csi.plusoft.com.br" qname="ns:RetornoInclusaoAtendimentoPadrao" type="java:br.com.plusoft.csi.bradescoaf.ws.vo.RetornoInclusaoAtendimentoPadrao" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://vo.ws.bradescoaf.csi.plusoft.com.br" qname="ns:AtendimentoPadraoWsVo" type="java:br.com.plusoft.csi.bradescoaf.ws.vo.AtendimentoPadraoWsVo" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+      <arrayMapping xmlns:ns="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:cmp-ns="http://vo.ws.bradescoaf.csi.plusoft.com.br" qname="ns:ArrayOf_tns1_AtendimentoPadraoWsVo" type="java:br.com.plusoft.csi.bradescoaf.ws.vo.AtendimentoPadraoWsVo[]" innerType="cmp-ns:AtendimentoPadraoWsVo" encodingStyle=""/>
+      <typeMapping xmlns:ns="http://vo.ws.bradescoaf.csi.plusoft.com.br" qname="ns:RetornoAtendimentoPadrao" type="java:br.com.plusoft.csi.bradescoaf.ws.vo.RetornoAtendimentoPadrao" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

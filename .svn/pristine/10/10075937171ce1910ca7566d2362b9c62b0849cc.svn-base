@@ -1,0 +1,21 @@
+.list-radio {
+	width: 26px;
+	text-align: center !important;
+}
+.list-apolice {
+	width: 100px;
+}
+.list-apolice-descricao-do-produto {
+	width: 150px;
+}
+.list-apolice-nome-do-segurado {
+	width: 121px;
+}
+.list-apolice-data-do-inicio-da-vigencia {
+	width: 150px;
+	text-align: center;
+}
+.list-apolice-data-do-termino-da-vigencia {
+	width: 160px;
+	text-align: center;
+}

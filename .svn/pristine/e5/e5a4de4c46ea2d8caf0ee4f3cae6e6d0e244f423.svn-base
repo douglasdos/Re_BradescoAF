@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:intf="http://ws.bradescoaf.csi.plusoft.com.br" xmlns:tns1="http://vo.ws.bradescoaf.csi.plusoft.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ws.bradescoaf.csi.plusoft.com.br" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://vo.ws.bradescoaf.csi.plusoft.com.br"/>
+   <element name="recuperarListaAtendimentoPadrao">
+    <complexType>
+     <sequence>
+      <element name="idEmprCdEmpresa" type="xsd:long"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="recuperarListaAtendimentoPadraoResponse">
+    <complexType>
+     <sequence>
+      <element name="recuperarListaAtendimentoPadraoReturn" type="tns1:RetornoAtendimentoPadrao"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_AtendimentoPadraoWsVo">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:AtendimentoPadraoWsVo"/>
+    </sequence>
+   </complexType>
+   <element name="incluirAtendimentoPadrao">
+    <complexType>
+     <sequence>
+      <element name="codigoAtendimentoPadrao" type="xsd:long"/>
+      <element name="idEmprCdEmpresa" type="xsd:long"/>
+      <element name="numeroSinistro" type="xsd:long"/>
+      <element name="textoManifestacao" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="incluirAtendimentoPadraoResponse">
+    <complexType>
+     <sequence>
+      <element name="incluirAtendimentoPadraoReturn" type="tns1:RetornoInclusaoAtendimentoPadrao"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://vo.ws.bradescoaf.csi.plusoft.com.br" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://ws.bradescoaf.csi.plusoft.com.br"/>
+   <complexType name="AtendimentoPadraoWsVo">
+    <sequence>
+     <element name="codigoAtendimentoPadrao" type="xsd:long"/>
+     <element name="descricaoAtendimentoPadrao" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="RetornoAtendimentoPadrao">
+    <sequence>
+     <element name="atendimentoPadraoWs" nillable="true" type="impl:ArrayOf_tns1_AtendimentoPadraoWsVo"/>
+     <element name="codigoRetorno" type="xsd:long"/>
+     <element name="mensagemRetorno" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="RetornoInclusaoAtendimentoPadrao">
+    <sequence>
+     <element name="codigoChamado" type="xsd:long"/>
+     <element name="codigoManifestacao" type="xsd:long"/>
+     <element name="codigoRetorno" type="xsd:long"/>
+     <element name="mensagemRetorno" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="incluirAtendimentoPadraoRequest">
+
+      <wsdl:part element="impl:incluirAtendimentoPadrao" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="incluirAtendimentoPadraoResponse">
+
+      <wsdl:part element="impl:incluirAtendimentoPadraoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="recuperarListaAtendimentoPadraoResponse">
+
+      <wsdl:part element="impl:recuperarListaAtendimentoPadraoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="recuperarListaAtendimentoPadraoRequest">
+
+      <wsdl:part element="impl:recuperarListaAtendimentoPadrao" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="AtendimentoPadraoWs">
+
+      <wsdl:operation name="recuperarListaAtendimentoPadrao">
+
+         <wsdl:input message="impl:recuperarListaAtendimentoPadraoRequest" name="recuperarListaAtendimentoPadraoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:recuperarListaAtendimentoPadraoResponse" name="recuperarListaAtendimentoPadraoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="incluirAtendimentoPadrao">
+
+         <wsdl:input message="impl:incluirAtendimentoPadraoRequest" name="incluirAtendimentoPadraoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:incluirAtendimentoPadraoResponse" name="incluirAtendimentoPadraoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="AtendimentoPadraoWsSoapBinding" type="impl:AtendimentoPadraoWs">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="recuperarListaAtendimentoPadrao">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="recuperarListaAtendimentoPadraoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="recuperarListaAtendimentoPadraoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="incluirAtendimentoPadrao">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="incluirAtendimentoPadraoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="incluirAtendimentoPadraoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="AtendimentoPadraoWsService">
+
+      <wsdl:port binding="impl:AtendimentoPadraoWsSoapBinding" name="AtendimentoPadraoWs">
+
+         <wsdlsoap:address location="http://localhost:8080/csiweb-bradescore/services/AtendimentoPadraoWs"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

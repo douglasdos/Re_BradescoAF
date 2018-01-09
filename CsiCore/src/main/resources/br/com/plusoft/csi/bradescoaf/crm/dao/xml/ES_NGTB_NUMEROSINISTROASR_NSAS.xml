@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<entity>
+
+	<name>ES_NGTB_NUMEROSINISTROASR_NSAS</name>
+	<datasourceFile>br.com.plusoft.config.DataSource</datasourceFile>
+	<type>TABLE</type>
+	<label></label>
+	<label-plural></label-plural>
+
+	<!-- Permissoes da entidade -->
+	<permissions>
+		<permission>
+			<name>visualizacao</name>
+			<key>adm.anhanguera.oferta.visualizacao</key>
+		</permission>
+		<permission>
+			<name>inclusao</name>
+			<key>adm.anhanguera.oferta.inclusao</key>
+		</permission>
+		<permission>
+			<name>alteracao</name>
+			<key>adm.anhanguera.oferta.alteracao</key>
+		</permission>
+		<permission>
+			<name>exclusao</name>
+			<key>adm.anhanguera.oferta.exclusao</key>
+		</permission>
+	</permissions>
+	<!-- Permissoes da entidade -->	
+
+	<!-- Redirecionanto de paginas -->
+	<pages>
+		<page>
+			<name>edit</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>main</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>administracao</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+	</pages>
+	<!-- Redirecionanto de paginas -->	
+
+	<object-business>
+		<name>vo</name>
+		<classname>br.vcom.plusoft.x.x.y.voNovo</classname>
+	</object-business>
+
+	<querys>
+
+		<select-by-condition>
+			SELECT 
+				NSAS_NR_SEQUENCIAL, 
+				NSAS_DH_GERADORSINISTRO, 
+				ID_FUNC_CD_FUNCIONARIO
+			FROM 
+				#OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS
+			#CRITERIA# 
+		</select-by-condition>
+		
+		<select-by-ultimo-registro>
+			SELECT 
+			    NSAS.NSAS_NR_SEQUENCIAL,
+			    NSAS.NSAS_DH_GERADORSINISTRO,
+			    NSAS.ID_FUNC_CD_FUNCIONARIO 
+			FROM 
+			    #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS NSAS
+			WHERE 
+			    NSAS.NSAS_NR_SEQUENCIAL = 
+			    (SELECT MAX(NSAS_NR_SEQUENCIAL) FROM #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS)
+		</select-by-ultimo-registro>
+
+		<select-by-ultimo-registro-funcionario>
+			SELECT 
+			    NSAS.NSAS_NR_SEQUENCIAL,
+			    NSAS.NSAS_DH_GERADORSINISTRO,
+			    NSAS.ID_FUNC_CD_FUNCIONARIO 
+			FROM 
+			    #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS NSAS
+			WHERE 
+			    ID_FUNC_CD_FUNCIONARIO = #id_func_cd_funcionario#
+			    AND NSAS.NSAS_NR_SEQUENCIAL = 
+			    (SELECT MAX(NSAS_NR_SEQUENCIAL) FROM #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS)
+			    
+		</select-by-ultimo-registro-funcionario>
+
+
+		<create-row-incremental>
+			INSERT INTO #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS
+			(
+			    NSAS_NR_SEQUENCIAL,
+			    NSAS_DH_GERADORSINISTRO,
+			    ID_FUNC_CD_FUNCIONARIO
+			) VALUES (
+			    (SELECT (NVL(MAX(NSAS_NR_SEQUENCIAL) , 0) + 1) FROM ES_NGTB_NUMEROSINISTROASR_NSAS),
+			    #nsas_dh_geradorsinistro#,
+			    #id_func_cd_funcionario#
+			)
+		</create-row-incremental>
+		
+
+		<create-row>
+			INSERT INTO 
+				#OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS(	
+				NSAS_NR_SEQUENCIAL, 
+				NSAS_DH_GERADORSINISTRO, 
+				ID_FUNC_CD_FUNCIONARIO
+			)VALUES( 
+				#nsas_nr_sequencial#, 
+				#nsas_dh_geradorsinistro#, 
+				#id_func_cd_funcionario#
+			) 
+
+		</create-row>
+
+		<update-row>
+			UPDATE #OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS
+				#PARAMETER#
+				#CRITERIA#
+		</update-row>
+
+		<remove-row>
+			DELETE 
+			FROM  
+				#OWNER#ES_NGTB_NUMEROSINISTROASR_NSAS
+			#CRITERIA# 
+		</remove-row>
+
+	</querys>
+
+	<fields>
+		<field> 
+			<name>NSAS_NR_SEQUENCIAL</name>
+			<type>Long</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>1</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>NSAS_DH_GERADORSINISTRO</name>
+			<type>DateTime</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>2</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>ID_FUNC_CD_FUNCIONARIO</name>
+			<type>Long</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>3</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+
+	</fields>
+</entity>

@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<application>
+	<menu>
+		<name>EMPRESA</name>
+		<label>prompt.empresa</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>EMPRESA</name>
+			<label>prompt.empresa</label>
+			<link>AdministracaoCsCdtbEmpresaEmpr.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.empresa.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>AREA</name>
+			<label>prompt.area</label>
+			<link>AdministracaoCsCdtbAreaArea.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.area.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>FUNCIONARIO</name>
+			<label>prompt.funcionario</label>
+			<link>AdministracaoCsCdtbFuncionarioFunc.do</link>
+			<image>webFiles/Menu/images/mvert/btn_Func.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_Func.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.funcionario.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>FUNC. RESOLVEDOR</name>
+			<label>prompt.funcionarioResolvedor</label>
+			<link>AdministracaoCsAstbFuncresolvedorFure.do</link>
+			<image>webFiles/Menu/images/mvert/Classificacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Classificacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.funcionarioresolvedor.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>GRUPO FUNCIONARIO</name>
+			<label>prompt.grupoFuncionario</label>
+			<link>AdministracaoCsCdtbGrupofuncpermGfpe.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.grupofuncionario.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>CS_ASTB_HISTORICOGFPE_HIGP</name>
+			<label>prompt.historico.GrupoFuncHistorico</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_HISTORICOGFPE_HIGP.xml&amp;entityEmpresaName=&amp;entityIdiomaName=&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Campanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Campanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.historicogfpe.visualizacao</permission-depends>
+		</item>	
+		<item>
+			<name>PAIS</name>
+			<label>prompt.pais</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_PAIS_PAIS.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAPAIS_EMPA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPAIS_IDPA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.pais.visualizacao</permission-depends>
+		</item>		
+		<item>
+			<name>PERMISSIONAMENTO</name>
+			<label>prompt.permissionamento</label>
+			<link>AdministracaoPermissionamento.do</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresa.permissionamento.visualizacao</permission-depends>
+		</item>		
+	</menu>
+	
+	<menu>
+		<name>CHAMADO</name>
+		<label>prompt.chamado</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>TIPO DE RELACAO</name>
+			<label>prompt.tipoRelacao</label>
+			<link>AdministracaoCsCdtbTipoRelacaoTpre.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chamado.tipoderelacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE DIVERSO</name>
+			<label>prompt.tipoDiverso</label>
+			<link>AdministracaoCsCdtbTipoDiversoTpdi.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chamado.tipodediverso.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ATENDIMENTO PADRÃO</name>
+			<label>prompt.atendimentoPadrao</label>
+			<link>AdministracaoCsCdtbAtendpadraoAtpa.do</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chamado.atendimentopadrao.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>PRÉ-ATENDIMENTO</name>
+			<label>prompt.preatendimento</label>
+			<link>AdministracaoCsCdtbGrupopreatendGrpr.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends>apl.feature.preatendimento</resource-depends>
+			<permission-depends>adm.chamado.preatendimento.visualizacao</permission-depends>
+		</item>
+	</menu>
+
+	<menu>
+		<name>MARKETING DE RELACIONAMENTO(MR)</name>
+		<label>prompt.mktRelacionamento</label>
+		<resource-depends>apl.feature.mr</resource-depends>
+		
+		<item>
+			<name>TIPO DE PROGRAMA</name>
+			<label>prompt.tipoPrograma</label>
+			<link>AdministracaoCsCdtbTpProgramaTppg.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Programa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Programa.gifS</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>ACAO</name>
+			<label>prompt.acao</label>
+			<link>AdministracaoCsCdtbAcaoAcao.do</link>
+			<image>webFiles/Menu/images/mvert/Acao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Acao.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>PROGRAMA ACAO</name>
+			<label>prompt.programaAcao</label>
+			<link>AdministracaoCsAstbAcaoProgramaAcpg.do</link>
+			<image>webFiles/Menu/images/mvert/Acao_Programa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Acao_Programa.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>PRODUTO PROGRAMA</name>
+			<label>prompt.produtoPrograma</label>
+			<link>AdministracaoCsAstbProdutoProgramaPrpr.do</link>
+			<image>webFiles/Menu/images/mvert/Produto_Programa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Produto_Programa.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>PROGRAMA PERFIL</name>
+			<label>prompt.programaPerfil</label>
+			<link>AdministracaoCsAstbProgramaPerfilPgpe.do</link>
+			<image>webFiles/Menu/images/mvert/Produto_Programa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Programa_Perfil.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>MATERIA PROMOCIONAL</name>
+			<label>prompt.materialPromocional</label>
+			<link>AdministracaoCsCdtbMaterialPromoMapr.do</link>
+			<image>webFiles/Menu/images/mvert/Material_Promocional.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Material_Promocional.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>ORIGEM MR</name>
+			<label>prompt.origemmr</label>
+			<link>AdministracaoCsCdtbMrOrigemMror.do</link>
+			<image>webFiles/Menu/images/mvert/bt_OrigemMKT.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_OrigemMKT.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+	</menu>
+
+	<menu>
+		<name>MANIFESTACAO</name>
+		<label>prompt.manifestacaofixo</label>
+		<resource-depends>apl.feature.naotemmanifestacao</resource-depends>
+
+		<item>
+			<name>MANIFESTACAO</name>
+			<label>prompt.manifestacao</label>
+			<link>AdministracaoCsCdtbManifTipoMatp.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt1.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt1dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.maniftipo.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>SUPERGRUPO</name>
+			<label>prompt.Supergrupo</label>
+			<link>AdministracaoCsCdtbSupergrupoSugr.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt1dis.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt1dis.gif</image-disabled>
+			<resource-depends>apl.feature.supergrupo</resource-depends>
+		</item>
+		<item>
+			<name>GRUPO DE MANIFESTACAO</name>
+			<label>prompt.grupoManifestacao</label>
+			<link>AdministracaoCsCdtbGrupoManifestacaoGrma.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Manifestacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Manifestacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.grupomanifestacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE MANIFESTACAO</name>
+			<label>prompt.tipoManifestacao</label>
+			<link>AdministracaoCsCdtbTpManifestacaoTpma.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Manifestacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Manifestacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.tipodamanifestacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>MANIFESTACAO GRUPO FUNCIONARIO</name>
+			<label>prompt.manifGrupFuncPerm</label>
+			<link>AdministracaoCsAstbManiftipoGfpermMtgp.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.maniftipoGfperm.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO LINHA</name>
+			<label>prompt.AssuntoGrupo</label>
+			<link>AdministracaoCsAstbProdutoManifPrma.do</link>
+			<image>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image-disabled>
+			<resource-depends>apl.feature.tipolinha</resource-depends>
+			<permission-depends>adm.manifestacao.manifestacaoproduto.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>GRUPO SUPER</name>
+			<label>prompt.GrupoSuper</label>
+			<link>AdministracaoCsAstbSuperGrupoManifSugm.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Assunto.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Assunto.gif</image-disabled>
+			<resource-depends>apl.feature.supergrupo</resource-depends>
+		</item>
+		<item>
+			<name>GRAU DE SATISFACAO</name>
+			<label>prompt.grauSatisfacao</label>
+			<link>AdministracaoCsCdtbGrauSatisfacaoGrsa.do</link>
+			<image>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.graudesatisfacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>GRUPO DOCUMENTO</name>
+			<label>prompt.grupoDocumento</label>
+			<link>AdministracaoCsCdtbGrupoDocumentoGrdo.do</link>
+			<image>webFiles/Menu/images/mvert/Material_Promocional.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Material_Promocional.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.grupodocumento.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>DOCUMENTO</name>
+			<label>prompt.documento</label>
+			<link>AdministracaoCsCdtbDocumentoDocu.do</link>
+			<image>webFiles/Menu/images/mvert/Documento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Documento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.documento.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ANEXO</name>
+			<label>prompt.anexo</label>
+			<link>AdministracaoCsCdtbAnexoMailAnma.do</link>
+			<image>webFiles/Menu/images/mvert/Anexo_Email.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Anexo_Email.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.anexo.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>DOCUMENTO ANEXO</name>
+			<label>prompt.documentoAnexo</label>
+			<link>AdministracaoCsCatbDocumentoAnexoDoan.do</link>
+			<image>webFiles/Menu/images/mvert/Documento_Anexo.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Documento_Anexo.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.documentoanexo.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>EVENTO DE FOLLOWUP</name>
+			<label>prompt.eventoFollowUp</label>
+			<link>AdministracaoCsCdtbEventoFollowUpEvfu.do</link>
+			<image>webFiles/Menu/images/mvert/Evento_Followup.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Evento_Followup.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.eventofollowup.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>BOTAO</name>
+			<label>prompt.botao</label>
+			<link>AdministracaoCsCdtbBotaoBota.do</link>
+			<image>webFiles/Menu/images/mvert/Evento_Followup.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Evento_Followup.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.botao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>CLASSIFICACAO</name>
+			<label>prompt.botclass</label>
+			<link>AdministracaoCsCdtbClassifmaniClma.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.classificacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>STATUS DA MANIFESTACAO</name>
+			<label>prompt.botstatus</label>
+			<link>AdministracaoCsCdtbStatusManifStma.do</link>
+			<image>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.status.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TEXTO PADRAO DA MANIFESTACAO</name>
+			<label>prompt.bottxpadrao</label>
+			<link>AdministracaoCsCdtbTxpadraomanifTxpm.do</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.textopadrao.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>CONCLUSAO MANIF</name>
+			<label>prompt.resultadoManif</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_CONCLUSAOMANIF_COMA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESACOMA_EMCM.xml&amp;temMultiempresa=true&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.conclusao.visualizacao</permission-depends>
+		</item> 
+		
+		<item>
+			<name>RESPOSTA PADRAO</name>
+			<label>prompt.RespostaPadrao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_RESPOSTAPADRAO_REPA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAREPA_EMRE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAREPA_IDRE.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Anexo_Email.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Anexo_Email.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.resposta.padrao.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>CADASTRO INTEGRACAO</name>
+			<label>prompt.CadastroIntegracao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_INTEGRACAO_INTE.xml</link>
+			<image>webFiles/Menu/images/mvert/Anexo_Email.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Anexo_Email.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.integracao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CHECKLIST</name>
+			<label>prompt.Checklist</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_CHECKLIST_CHLI.xml</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.checklist.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>TAREFAS DO CHECKLIST</name>
+			<label>prompt.TarefasDoChecklist</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_TAREFACHECKLIST_TACL.xml</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.tarefa.checklist.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CHECKLIST X TAREFAS</name>
+			<label>prompt.ChecklistXTarefas</label>
+			<link>AbreCsAstbChecklisttarefaClta.do</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.tarefa.checklist.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>DESENHO DO PROCESSO</name>
+			<label>prompt.DesenhoDoProcesso</label>
+			<link>AbreCsCdtbDesenhoprocessoDepr.do</link>
+			<image>webFiles/Menu/images/mvert/check.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/check.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.desenho.processo.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>STATUS PENDENCIA</name>
+			<label>prompt.StatusPendencia</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_STATUSPENDENCIA_STPD.xml</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.status.pendencia.visualizacao</permission-depends>
+		</item>
+		
+	</menu>
+
+	<menu>
+		<name>PRODUTO</name>
+		<label>prompt.produto</label>
+		<resource-depends></resource-depends>
+		<item>
+			<name>ASSUNTONIVEL 1</name>
+			<label>prompt.assuntoNivel1</label>
+			<link>AdministracaoCsCdtbAssuntoNivel1Asn1.do</link>
+			<image>webFiles/Menu/images/mvert/Assunto_Nivel.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Assunto_Nivel.gif</image-disabled>
+			<resource-depends>apl.feature.variedade</resource-depends>
+			<permission-depends>adm.produto.assuntonivel1.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ASSUNTONIVEL 2</name>
+			<label>prompt.assuntoNivel2</label>
+			<link>AdministracaoCsCdtbAssuntoNivel2Asn2.do</link>
+			<image>webFiles/Menu/images/mvert/Assunto_Nivel.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Assunto_Nivel.gif</image-disabled>
+			<resource-depends>apl.feature.variedade</resource-depends>
+			<permission-depends>adm.produto.assuntonivel2.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>LINHA</name>
+			<label>prompt.linha</label>
+			<link>AdministracaoCsCdtbLinhaLinh.do</link>
+			<image>webFiles/Menu/images/mvert/Linha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Linha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.produto.linha.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>PRODUTO ASSUNTO</name>
+			<label>prompt.composicaoProdutoAssunto</label>
+			<link>AdministracaoCsCdtbProdutoAssuntoPras.do</link>
+			<image>webFiles/Menu/images/mvert/Produto_Assunto.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Produto_Assunto.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.produto.produtoassunto.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>DESTINO PRODUTO</name>
+			<label>prompt.destinoProduto</label>
+			<link>AdministracaoCsCdtbDestinoprodutoDepr.do</link>
+			<image>webFiles/Menu/images/mvert/DestinoProduto.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/DestinoProduto.gif</image-disabled>
+			<resource-depends>apl.feature.consumidor</resource-depends>
+			<permission-depends>adm.produto.destinoproduto.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>CARACTERISTICA PRODUTO</name>
+			<label>prompt.caracteristicaProduto</label>
+			<link>AdministracaoCsCdtbCaracteristicaProdCapr.do</link>
+			<image>webFiles/Menu/images/mvert/Documento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Documento.gif</image-disabled>
+			<permission-depends>adm.caracteristica.produto.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>TABELA CARACT PRODUTO</name>
+			<label>prompt.tabelacaracteristicaProduto</label>
+			<link>AdministracaoCsCdtbTabelaCaractProdTacp.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt1.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt1.gif</image-disabled>
+			<permission-depends>adm.tabela.caract.prod.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>RESP TABULADA CARACT PRODUTO</name>
+			<label>prompt.resptabcaractprod</label>
+			<link>AdministracaoCsCdtbRespTabCaractProdRtcp.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt2.gif</image-disabled>
+			<permission-depends>adm.resp.tabulada.caract.prod.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>LINHA CARACTERISTICA</name>
+			<label>prompt.linhaCaracteristica</label>
+			<link>AdministracaoCsCatbLinhaCaractProdLcpr.do</link>
+			<image>webFiles/Menu/images/mvert/Topico_Informacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Topico_Informacao.gif</image-disabled>
+			<permission-depends>adm.linha.caract.prod.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>FORNECEDOR</name>
+			<label>prompt.fornecedor</label>
+			<link>AdministracaoCsCdtbFornprodutoFopr.do</link>
+			<image>webFiles/Menu/images/mvert/Servico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Servico.gif</image-disabled>
+			<permission-depends>adm.produto.fornecedor.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>MARCA</name>
+			<label>prompt.marca</label>
+			<link>AdministracaoCsCdtbMarcafornecedorMafo.do</link>
+			<image>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image-disabled>
+			<permission-depends>adm.produto.marca.visualizacao</permission-depends>
+			<resource-depends></resource-depends>
+		</item>
+		<item>
+			<name>PRODUTO GRUPO FUNCIONARIO</name>
+			<label>prompt.prodGrupFuncPerm</label>
+			<link>AdministracaoCsAstbProdutoassuntogfpermPagp.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.manifestacao.produtoassuntogfperm.visualizacao</permission-depends>
+		</item>
+	</menu>
+
+	<menu>
+		<name>PESQUISA</name>
+		<label>prompt.pesquisa</label>
+		<resource-depends>apl.feature.naotempesquisa</resource-depends>
+		
+		<item>
+			<name>PESQUISA</name>
+			<label>prompt.pesquisa</label>
+			<link>AdministracaoCsCdtbPesquisaPesq.do</link>
+			<image>webFiles/Menu/images/mvert/btn_comoloca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_comoloca.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.pesquisa.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>PESQUISA FUNC</name>
+			<label>prompt.pesquisafuncionario</label>
+			<link>AdministracaoCsCatbPesquisaFuncPefu.do</link>
+			<image>webFiles/Menu/images/mvert/btn_comoloca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_comoloca.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.pesquisa.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>QUESTAO</name>
+			<label>prompt.questao</label>
+			<link>AdministracaoCsCdtbQuestaoQues.do</link>
+			<image>webFiles/Menu/images/mvert/Questao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Questao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.questao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>GRUPO QUESTAO</name>
+			<label>prompt.grupoQuestao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_GRUPOQUESTAO_GRQU.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAGRQU_EMGR.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAGRQU_IDGR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Linha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Linha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.grupoquestao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ALTERNATIVA</name>
+			<label>prompt.alternativa</label>
+			<link>AdministracaoCsCdtbAlternativaAlte.do</link>
+			<image>webFiles/Menu/images/mvert/Alternativa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Alternativa.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.alternativa.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>PESQUISA QUESTAO</name>
+			<label>prompt.pesquisaQuestao</label>
+			<link>AdministracaoCsCatbPesqquestaoPque.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.pesquisaquestao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>QUESTAO ALTERNATIVA</name>
+			<label>prompt.questaoAlternativa</label>
+			<link>AdministracaoCsCatbQuestalternativaQual.do</link>
+			<image>webFiles/Menu/images/mvert/Questao_Alternativa.gif</image>
+			<image-disabled>Questao_Alternativa.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.questaoalternativa.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>PESQUISA ATENDPADRAO</name>
+			<label>prompt.pesquisaAtendPadrao</label>
+			<link>AdministracaoCsAstbPesqatendpadraoPeap.do</link>
+			<image>webFiles/Menu/images/mvert/Documento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Documento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.pesquisa.pesquisaatendpadrao.visualizacao</permission-depends>
+		</item>
+		
+	</menu>
+	
+	<menu>
+		<name>PERFIL</name>
+		<label>prompt.perfil</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>PERFIL</name>
+			<label>prompt.perfil</label>
+			<link>AdministracaoCsCdtbPerfilPerf.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt12.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt12dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.perfil.perfil.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>DETALHE PERFIL</name>
+			<label>prompt.detalhePerfil</label>
+			<link>AdministracaoCsCdtbDetperfilDtpe.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt13.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt13dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.perfil.detalhedoperfil.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TABELA</name>
+			<label>prompt.tabela</label>
+			<link>AdministracaoCsCdtbTabelaTabe.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt1.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt1dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.perfil.tabela.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>RESPOSTA TABULADA</name>
+			<label>prompt.respostaTabulada</label>
+			<link>AdministracaoCsCdtbResptabuladaReta.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt2dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.perfil.respostatabulada.visualizacao</permission-depends>
+		</item>
+	</menu>
+	
+	<menu>
+		<name>CONTATO</name>
+		<label>prompt.contatoCliente</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>COMO LOCALIZOU</name>
+			<label>prompt.comoLocalizou</label>
+			<link>AdministracaoCsCdtbComoLocalizouColo.do</link>
+			<image>webFiles/Menu/images/mvert/btn_comoloca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_comoloca.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.comolocalizou.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ESTADO DE ANIMO</name>
+			<label>prompt.estadoAnimo</label>
+			<link>AdministracaoCsCdtbEstadoAnimoEsan.do</link>
+			<image>webFiles/Menu/images/mvert/btn_animo.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_animo.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.estadodeanimo.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>FORMA DE CONTATO</name>
+			<label>prompt.formaContato</label>
+			<link>AdministracaoCsCdtbFormaContatoFoco.do</link>
+			<image>webFiles/Menu/images/mvert/Forma_Contato.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Forma_Contato.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.formadecontato.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>MIDIA</name>
+			<label>prompt.midia</label>
+			<link>AdministracaoCsCdtbMidiaMidi.do</link>
+			<image>webFiles/Menu/images/mvert/Midia.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Midia.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.midia.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE RETORNO</name>
+			<label>prompt.tipoRetorno</label>
+			<link>AdministracaoCsCdtbTipoRetornoTpre.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Retorno.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Retorno.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.formaderetorno.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE PUBLICO</name>
+			<label>prompt.tipoPublico</label>
+			<link>AdministracaoCsCdtbTipoPublicoTppu.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Publico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Publico.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.tipodepublico.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ESTADO CIVIL</name>
+			<label>prompt.estadoCivil</label>
+			<link>AdministracaoCsCdtbEstadoCivilEsci.do</link>
+			<image>webFiles/Menu/images/mvert/Estado_Civil.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Estado_Civil.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.estadocivil.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE PUBLICO X BOTAO</name>
+			<label>prompt.tipoDePublico_x_Botao</label>
+			<link>AdministracaoCsAstbBotaotppuBotp.do</link>
+			<image>webFiles/Menu/images/mvert/btn_comoloca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_comoloca.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.tipodepublicobotao.visualizacao</permission-depends>
+		</item>		
+
+		<item>
+			<name>ORIGEM</name>
+			<label>prompt.origem</label>
+			<link>AdministracaoCsCdtbOrigemOrig.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.origem.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>TIPO_ORIGEM</name>
+			<label>prompt.tipoorigem</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_TIPOORIGEM_TPOR.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESATPOR_EMTO.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATPOR_IDTO.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.tipoorigem.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>TIPO_DOCUMENTO</name>
+			<label>prompt.tipoDocumento</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_TIPODOCUMENTO_TPDO.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESATPDO_EMTD.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATPDO_IDTD.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.tipodocumento.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>BANCO</name>
+			<label>prompt.titulo.banco</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_BANCO_BANC.xml&amp;temMultiempresa=false&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.banco.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>AGENCIA</name>
+			<label>prompt.titulo.agencia</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_AGENCIA_AGEN.xml&amp;temMultiempresa=false&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.contatocliente.agencia.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>MIDIA SOCIAL</name>
+			<label>prompt.midiasocial.cadastro</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/scrm/CS_CDTB_MIDIASOCIAL_MISO.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/scrm/CS_ASTB_EMPRESAMISO_IDMS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/Regiao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regiao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.scrm.midiasocial.visualizacao</permission-depends>
+		</item>
+
+	</menu>
+
+	<menu>
+		<name>RECLAMACAO</name>
+		<label>prompt.reclamacao</label>
+		<resource-depends>apl.feature.consumidor</resource-depends>
+		<!-- Henrique 09-05-2006 removido pois nao existe a tabela de armazenamento 
+		<item>
+			<name>CONSTATACAO DO PROBLEMA</name>
+			<label>prompt.constatacaoProblema</label>
+			<link>AdministracaoCsCdtbConstatacaoCpro.do</link>
+			<image>webFiles/Menu/images/mvert/Constatacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Constatacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+		</item>
+		 -->
+		<item>
+			<name>JUSTIFICATIVA LAUDO</name>
+			<label>prompt.justificativaLaudo</label>
+			<link>AdministracaoCsCdtbJustiflaudoJula.do</link>
+			<image>webFiles/Menu/images/mvert/Justificativa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Justificativa.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.justificativadolaudo.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>ORIGEM DO PROBLEMA</name>
+			<label>prompt.origemProblema</label>
+			<link>AdministracaoCsCdtbOrigemProblemaOrip.do</link>
+			<image>webFiles/Menu/images/mvert/Origem_Problema.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Origem_Problema.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.origemdoproblema.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>PRESTADO SERVICO</name>
+			<label>prompt.prestadorServico</label>
+			<link>AdministracaoCsCdtbPrestadorServicoPrse.do</link>
+			<image>webFiles/Menu/images/mvert/btn_prest.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/btn_prest.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.prestadordeservico.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TIPO DE TERCEIRO</name>
+			<label>prompt.tipoTerceiro</label>
+			<link>AdministracaoCsCdtbTpTercReclTptr.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Terceiro.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Terceiro.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.tipodeterceiro.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>FABRICA</name>
+			<label>prompt.fabrica</label>
+			<link>AdministracaoCsCdtbFabricaFabr.do</link>
+			<image>webFiles/Menu/images/mvert/Fabrica.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Fabrica.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.fabrica.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>EXPOSICAO</name>
+			<label>prompt.exposicao</label>
+			<link>AdministracaoCsCdtbExposicaoExpo.do</link>
+			<image>webFiles/Menu/images/mvert/Exposicao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Exposicao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.exposicao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>FORMA DE RESSARCIMENTO</name>
+			<label>prompt.formaRessarcimento</label>
+			<link>AdministracaoCsCdtbTipoRessarciTpre.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.formaderessarcimento.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>MOTIVO LOTE</name>
+			<label>prompt.motivoLote</label>
+			<link>AdministracaoCsCdtbMotivoloteMolo.do</link>
+			<image>webFiles/Menu/images/mvert/MotivoLote.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/MotivoLote.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.motivolote.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>MOTIVO TROCA</name>
+			<label>prompt.motivoTroca</label>
+			<link>AdministracaoCsCdtbMotivotrocaMotr.do</link>
+			<image>webFiles/Menu/images/mvert/MotivoTroca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/MotivoTroca.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.motivotroca.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>PROCEDENTE</name>
+			<label>prompt.procedente</label>
+			<link>AdministracaoCsCdtbProcedenteProc.do</link>
+			<image>webFiles/Menu/images/mvert/Procedente.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Procedente.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.procedente.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>RESULTADO DA ANALISE</name>
+			<label>prompt.resultadoAnal</label>
+			<link>AdministracaoCsCdtbResultadoanalRean.do</link>
+			<image>webFiles/Menu/images/mvert/ResultadoAnalise.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ResultadoAnalise.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.resultadodeanalise.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>LAUDO PRADAO</name>
+			<label>prompt.laudoPadrao</label>
+			<link>AdministracaoCsCdtbLaudopadraoLapa.do</link>
+			<image>webFiles/Menu/images/mvert/LaudoPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/LaudoPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.laudopadrao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>SITUACAO LOTE</name>
+			<label>prompt.situacaoloteSilo</label>
+			<link>AdministracaoCsCdtbSituacaoloteSilo.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Manifestacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Manifestacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.situacaolote.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CONDICAO DE USO</name>
+			<label>prompt.condicaouso</label>
+			<link>AdministracaoCsCdtbCondicaoloteClot.do</link>
+			<image>webFiles/Menu/images/mvert/ProdutoVenda.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ProdutoVenda.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.condicaouso.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>FORMA DE ENVIO DA AMOSTRA</name>
+			<label>prompt.formaEnvioAmostra</label>
+			<link>AdministracaoCsCdtbTpEnvioAmostraTpea.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Envio_Amostra.gif</image>
+			<image-disabled>webFiles/Menu/images/Tipo_Envio_Amostra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.formaenvioamostra.visualizacao</permission-depends>
+		</item>
+		<!-- item>
+			<name>FORMA DE ENVIO DA AMOSTRA</name>
+			<label>prompt.formaEnvioAmostra</label>
+			<link>AdministracaoCsCdtbTpEnvioAmostraTpea.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Programa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Situacao_Embalagem.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.formaenvioamostra.visualizacao</permission-depends>
+		</item-->
+		
+		<item>
+			<name>LOCAL DE COMPRA</name>
+			<label>prompt.LocalCompra</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_LOCALCOMPRA_LOCO.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESALOCO_EMLC.xml&amp;temMultiempresa=true&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.reclamacao.localcompra.visualizacao</permission-depends>
+		</item>
+	</menu>
+	
+	<menu>
+		<name>INFORMACAO</name>
+		<label>prompt.informacao</label>
+		<resource-depends>apl.feature.naoteminformacao</resource-depends>
+		
+		<item>
+			<name>TIPO DE INFORMACAO</name>
+			<label>prompt.tipoInformacao</label>
+			<link>AdministracaoCsCdtbTpinformacaoTpin.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Informacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Informacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.informacao.tipodeinformacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>TOPICO DE INFORMCAO</name>
+			<label>prompt.topicoInformacao</label>
+			<link>AdministracaoCsCdtbTopicoinformacToin.do</link>
+			<image>webFiles/Menu/images/mvert/Topico_Informacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Topico_Informacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.informacao.topicodeinformacao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>COMPOSICAO DA INFORMACAO</name>
+			<label>prompt.composicaoInformacao</label>
+			<link>AdministracaoCsAstbComposicaoComp.do</link>
+			<image>webFiles/Menu/images/mvert/Composicao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Composicao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.informacao.composicaodeinformacao.visualizacao</permission-depends>
+		</item>				
+	</menu>
+
+	<menu>
+		<name>GERENCIADOR DE EMAIL</name>
+		<label>prompt.gerenciadorEMail</label>
+		<resource-depends>apl.feature.email</resource-depends>
+		
+		<item>
+			<name>GRUPO DE FUNCIONARIO</name>
+			<label>prompt.grupoFuncionario</label>
+			<link>AdministracaoCsCdtbGrupoFuncGrfu.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.grupofuncionario.visualizacao</permission-depends>
+		</item>				
+		<!--item>
+			<name>SERVICO</name>
+			<label>prompt.servico</label>
+			<link>AdministracaoCsCdtbServicoServ.do</link>
+			<image>webFiles/Menu/images/mvert/Servico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Servico.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.grupofuncionario.visualizacao</permission-depends>
+		</item-->				
+		<item>
+			<name>CAIXA POSTAL</name>
+			<label>prompt.caixaPostal</label>
+			<link>AdministracaoCsCdtbCaixaPostalCapo.do</link>
+			<image>webFiles/Menu/images/mvert/Caixa_Postal.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Caixa_Postal.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.caixapostal.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>ACAO REGRA</name>
+			<label>prompt.acaoRegra</label>
+			<link>AdministracaoCsCdtbAcaoRegraAcre.do</link>
+			<image>webFiles/Menu/images/mvert/Acao_Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Acao_Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.acaoregra.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>ASSUNTO EMAIL</name>
+			<label>prompt.assuntoEMail</label>
+			<link>AdministracaoCsCdtbAssuntoMailAsme.do</link>
+			<image>webFiles/Menu/images/mvert/Assunto_Email.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Assunto_Email.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.assuntoemail.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>REGRA</name>
+			<label>prompt.regra</label>
+			<link>AdministracaoCsCdtbRegraRegr.do</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.regra.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>ITEM REGRA</name>
+			<label>prompt.itemRegra</label>
+			<link>AdministracaoCsCdtbItemRegraItre.do</link>
+			<image>webFiles/Menu/images/mvert/Item_Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Item_Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.itemregra.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>GRUPO ASSUNTO</name>
+			<label>prompt.grupoAssunto</label>
+			<link>AdministracaoCsAstbGrupoAssuntoAsgr.do</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Assunto.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Assunto.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.grupoassunto.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>FUNCIONARIO GRUPO</name>
+			<label>prompt.funcionarioGrupo</label>
+			<link>AdministracaoCsCatbFuncGrfuFugr.do</link>
+			<image>webFiles/Menu/images/mvert/Topico_Informacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Topico_Informacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.funcionariogrupo.visualizacao</permission-depends>
+		</item>				
+
+		<item>
+			<name>MOTIVO EXCLUSAO EMAIL</name>
+			<label>prompt.motivoexclusaoemail</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVOEXCLEMAIL_MEEM.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAMOTEXMAIL_EMEM.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMEEM_IDME.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/MotivoEncerramento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/MotivoEncerramento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.motivoexclemail.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>MOTIVO TRANS EMAIL</name>
+			<label>prompt.motivotransemail</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVOTRANSEMAIL_MTEM.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESATRANSMAIL_EMTR.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMTEM_IDMT.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/bt_Origem.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_Origem.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.motivotransemail.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>MOTIVO PEND EMAIL</name>
+			<label>prompt.motivopendemail</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVOPENDEMAIL_MPEM.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAPENDMAIL_EMPE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMPEM_IDMP.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Documento_Anexo.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Documento_Anexo.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.motivopendemail.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>MOTIVO DESB EMAIL</name>
+			<label>prompt.motivodesbemail</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVODESBEMAIL_MDEM.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESADESBMAIL_EMDE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMDEM_IDMD.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/ResultadoAnalise.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ResultadoAnalise.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.motivodesbemail.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CaixaGrupo</name>
+			<label>prompt.caixaXgrupo</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_CAIXAGRUPO_CAGR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordeemail.caixagrupo.visualizacao</permission-depends>
+		</item>
+
+	</menu>
+
+	<menu>
+		<name>CAMPANHA</name>
+		<label>prompt.gerenciadorCampanha</label>
+		<resource-depends>apl.feature.campanha</resource-depends>
+		
+		<item>
+			<name>CAMPANHA</name>
+			<label>prompt.campanha</label>
+			<link>AdministracaoCsCdtbCampanhaCamp.do</link>
+			<image>webFiles/Menu/images/mvert/Campanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Campanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.campanha.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>SUB-CAMPANHA</name>
+			<label>prompt.subcampanha</label>
+			<link>AdministracaoCsCdtbPublicoPubl.do</link>
+			<image>webFiles/Menu/images/mvert/SubCampanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/SubCampanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.subcampanha.visualizacao</permission-depends>
+		</item>				
+		
+		<item>
+			<name>LAYOUT</name>
+			<label>prompt.layout</label>
+			<link>AdministracaoCsCdtbLayoutLaou.do</link>
+			<image>webFiles/Menu/images/mvert/Layout.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Layout.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.layout.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>CAMPOS LAYOUT</name>
+			<label>prompt.camposLayout</label>
+			<link>AdministracaoCsAstbArqCargaArca.do</link>
+			<image>webFiles/Menu/images/mvert/Campos_Layout.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Campos_Layout.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.camposdolayout.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>ANEXO CAMPANHA</name>
+			<label>prompt.anexoCampanha</label>
+			<link>AdministracaoCsCatbAnexoCampAnca.do</link>
+			<image>webFiles/Menu/images/mvert/Anexo_Campanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Anexo_Campanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.anexocampanha.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>MOTIVO ENCERRAMENTO</name>
+			<label>prompt.motivoEncerramento</label>
+			<link>AdministracaoCsCdtbMotivoencerraMoen.do</link>
+			<image>webFiles/Menu/images/mvert/MotivoEncerramento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/MotivoEncerramento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.motivodeencerramento.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>JUSTIFICATIVA</name>
+			<label>prompt.justificativa</label>
+			<link>AdministracaoCsCdtbJustificativaJust.do</link>
+			<image>webFiles/Menu/images/mvert/Justificativa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Justificativa.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.justificativa.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>RESULTADO</name>
+			<label>prompt.resultado</label>
+			<link>AdministracaoCsCdtbResultadoResu.do</link>
+			<image>webFiles/Menu/images/mvert/Resultado.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Resultado.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.resultado.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>CATEGORIA PRODUTO</name>
+			<label>prompt.categoriaProduto</label>
+			<link>AdministracaoCsCdtbCategoriaprodCapr.do</link>
+			<image>webFiles/Menu/images/mvert/CategoriaProduto.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/CategoriaProduto.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.categoriadoproduto.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>PRODUTO VENDA</name>
+			<label>prompt.produtoVenda</label>
+			<link>AdministracaoCsCdtbProdutovendaProd.do</link>
+			<image>webFiles/Menu/images/mvert/ProdutoVenda.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ProdutoVenda.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.produtovenda.visualizacao</permission-depends>
+		</item>				
+
+		<item>
+			<name>TIPO LOG</name>
+			<label>prompt.camapanha.tpLog</label>
+			<link>AdministracaoCsCdtbTplogTplo.do</link>
+			<image>webFiles/Menu/images/mvert/TipoLog.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/TipoLog.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.tipolog.visualizacao</permission-depends>
+		</item>	
+		
+		<item>
+			<name>TIPO AGENDAMENTO</name>
+			<label>prompt.tipoAgendamento</label>
+			<link>AdministracaoCsCdtbTpagendamentoTpag.do</link>
+			<image>webFiles/Menu/images/mvert/TpAgendamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/TpAgendamento.gif</image-disabled>
+			<resource-depends>apl.feature.ativo</resource-depends>
+			<permission-depends>adm.gerenciadordecampanha.produtovenda.visualizacao</permission-depends>
+		</item>			
+	
+	</menu>
+	
+	<menu>
+		<name>DASHBOARD</name>
+		<label>prompt.DashBoard</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>DASHBOARD</name>
+			<label>prompt.DashBoard</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/dashboard/dao/xml/CS_CDTB_DASHBOARD_DABO.xml&amp;entityEmpresaName=br/com/plusoft/dashboard/dao/xml/CS_ASTB_EMPRESADABO_EMDB.xml&amp;entityIdiomaName=br/com/plusoft/dashboard/dao/xml/CS_ASTB_IDIOMADABO_IDDB.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Campanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Campanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.dashboard.visualizacao</permission-depends>
+		</item>		
+
+		<item>
+			<name>CS_ASTB_GFPEDASHBOARD_GFDB</name>
+			<label>prompt.GrupofuncionarioDashboard</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/dashboard/dao/xml/CS_ASTB_GFPEDASHBOARD_GFDB.xml&amp;entityEmpresaName=&amp;entityIdiomaName=&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Campanha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Campanha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.dashboard.visualizacao</permission-depends>
+		</item>		
+	</menu>
+	
+	<menu>
+		<name>OCORRENCIA MASSIVA</name>
+		<label>prompt.ocorrenciaMassiva</label>
+		<resource-depends>apl.feature.massiva</resource-depends>
+		<item>
+			<name>GRUPO OCORRENCIA</name>
+			<label>prompt.grupoOcorrencia</label>
+			<link>AdministracaoCsCdtbGrupoocorrenciaGroc.do</link>
+			<image>webFiles/Menu/images/mvert/VendingMachine.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/VendingMachine.gif</image-disabled>
+			<resource-depends>apl.feature.massiva</resource-depends>
+		</item>				
+
+		<item>
+			<name>ABRANGENCIA</name>
+			<label>prompt.abrangencia</label>
+			<link>AdministracaoCsCdtbParamAbrangPaab.do</link>
+			<image>webFiles/Menu/images/mvert/Regiao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regiao.gif</image-disabled>
+			<resource-depends>apl.feature.massiva</resource-depends>
+		</item>				
+	</menu>
+	
+	<menu>
+		<name>UTIL</name>
+		<label>prompt.util</label>
+		<resource-depends></resource-depends>
+		<item>
+			<name>VALIDARCONFIGURACAO</name>
+			<label>prompt.validarConfiguracao</label>
+			<link>webFiles/validaConfiguracao.jsp</link>
+			<image>webFiles/Menu/images/mvert/Servico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Servico.gif</image-disabled>
+			<resource-depends>apl.feature.validacaoautomatica</resource-depends>
+			<permission-depends>adm.chamado.configuracao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>CONFIGURACAO</name>
+			<label>prompt.configuracao</label>
+			<link>AdministracaoCsDmtbConfiguracaoConf.do</link>
+			<image>webFiles/Menu/images/mvert/Servico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Servico.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chamado.configuracao.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>FERIADO</name>
+			<label>prompt.feriado</label>
+			<link>AdministracaoCsCdtbFeriadoFeri.do</link>
+			<image>webFiles/Menu/images/mvert/ProdutoVenda.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ProdutoVenda.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chamado.feriado.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>GRUPO TELEFONE</name>
+			<label>prompt.grupoTelefone</label>
+			<link>AdministracaoCsCdtbGrupotelGrte.do</link>
+			<image>webFiles/Menu/images/mvert/TpAgendamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/TpAgendamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.grupotelefone.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>MOTIVO DE PAUSA</name>
+			<label>prompt.motivoDePausa</label>
+			<link>AdministracaoCsCdtbMotivopausaMopa.do</link>
+			<image>webFiles/Menu/images/mvert/TipoLog.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/TipoLog.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.motivodepausa.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>SERVICO</name>
+			<label>prompt.servico</label>
+			<link>AdministracaoCsCdtbServicoServ.do</link>
+			<image>webFiles/Menu/images/mvert/Acao_Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Acao_Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.servico.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>HORAS UTEIS</name>
+			<label>prompt.horasUteis</label>
+			<link>AdministracaoCsCdtbHorasuteisHrut.do</link>
+			<image>webFiles/Menu/images/mvert/horasUteis.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/horasUteis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.horasuteis.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>DOMINIO LOGIN</name>
+			<label>prompt.logindomain</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_LOGINDOMAIN_LODO.xml&amp;temMultiempresa=false&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/Regiao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regiao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.logindomain.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>GER_LICENCA</name>
+			<label>prompt.gerenciamentoLicenca</label>
+			<link>CadastroLicenca.do?tela=ifrmCadastroLicenca</link>
+			<image>webFiles/Menu/images/mvert/bt_Agente.gif</image>
+			<image-disabled>images/mvert/bt_Agente.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.util.gerenciamentolicencas.visualizacao</permission-depends>
+		</item>
+		
+	</menu>
+	
+	<menu>
+		<name>RETORNO DE CORRESPONCIA</name>
+		<label>prompt.retornocorresp</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>MOTIVO DE RETORNO</name>
+			<label>prompt.motivoretorno</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVORETORNO_MORE.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAMORE_EMMO.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMOTRETORNO_IDMR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image-disabled>
+			<resource-depends>apl.feature.retornocorresp</resource-depends>
+			<permission-depends>adm.retornocorresp.motivoretorno.visualizacao</permission-depends>
+		</item>		
+
+		<item>
+			<name>EMPRESA RESPONSAVEL</name>
+			<label>prompt.empresaresp</label>
+			<link>AdministracaoCsCdtbEmpresarespEmre.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Diverso.gif</image-disabled>
+			<resource-depends>apl.feature.retornocorresp</resource-depends>
+			<permission-depends>adm.retornocorresp.empresaresp.visualizacao</permission-depends>
+		</item>
+	</menu>
+	
+	<menu>
+		<name>NOTICIA</name>
+		<label>prompt.noticia</label>
+		<resource-depends>apl.feature.noticia</resource-depends>
+		
+		<item>
+			<name>ASSUNTO</name>
+			<label>prompt.assunto</label>
+			<link>AdministracaoCsCdtbAssuntonoticiaAsno.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.noticia.assunto.visualizacao</permission-depends>
+		</item>
+	</menu>
+
+	<menu>
+		<name>SFA</name>
+		<label>prompt.sfa</label>
+		<resource-depends>apl.feature.sfa</resource-depends>
+		
+		<item>
+			<name>SEGMENTO</name>
+			<label>prompt.segmento</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_SEGMENTOSFA_SESF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESASEGMENTO_EMSE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMASESF_IDSE.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Linha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Linha.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.segmento.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>AREA</name>
+			<label>prompt.area</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_AREASFA_ARSF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAAREASFA_EMAS.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAAREASFA_IDAS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.area.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>CARGO</name>
+			<label>prompt.cargo</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_CARGOSFA_CASF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESACARGOSFA_EMCS.xml&amp;entityIdiomaName=CS_ASTB_IDIOMACARGOSFA_IDCS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/ProdutoVenda.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ProdutoVenda.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.cargo.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>CLASSIFICACAO</name>
+			<label>prompt.classificacao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_CLASSIFICACAOSFA_CLSF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESACLSF_EMCS.xml&amp;entityIdiomaName=CS_ASTB_IDIOMACLSF_IDCS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.classificacao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>STATUS</name>
+			<label>prompt.leadstatus</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_STATUSSFA_STSF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESASTSF_EMSS.xml&amp;entityIdiomaName=CS_ASTB_IDIOMASTSF_IDSS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.status.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>STATUS_TAREFA</name>
+			<label>prompt.statusTarefa</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_DMTB_STATUSTAREFA_STTA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESASTTA_EMST.xml&amp;entityIdiomaName=CS_ASTB_IDIOMASTTA_IDST.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grau_Satisfacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.statustarefa.visualizacao</permission-depends>
+		</item> 
+		
+		<item>
+			<name>TIPO</name>
+			<label>prompt.tarefaTipo</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_TIPOTAREFA_TPTA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESATPTA_EMTP.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATPTA_IDTP.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Alternativa.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Alternativa.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tipotarefa.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>GRAU_INTERESSE</name>
+			<label>prompt.oportunidadeGrauInteresse</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_GRAUINTERESSE_GRIN.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAGRIN_EMGR.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAGRIN_IDGR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Estado_Civil.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Estado_Civil.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.grauinteresse.visualizacao</permission-depends>
+		</item>
+		
+		<!--item>
+			<name>SITUACAO</name>
+			<label>prompt.oportunidadeSituacao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_SITUACAOOPOR_SIOP.xml</link>
+			<image>webFiles/Menu/images/mvert/Questao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Questao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.situacao.visualizacao</permission-depends>
+		</item-->
+
+		<item>
+			<name>ATEND PADRAO X EST VENDA</name>
+			<label>prompt.tpNegEstVendaAtpd</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_TPNEGESTVENDATPD_NEAP.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tpnegestvendaatpd.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>ESTAGIO_VENDA</name>
+			<label>prompt.oportunidadeEstagioVenda</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_ESTAGIOVENDA_ESVE.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAESVE_EMEV.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAESVE_IDEV.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Grupo_Funcionario.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.estagiovenda.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>STATUS</name>
+			<label>prompt.oportunidadeStatus</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_STATUSOPOR_STOP.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESASTOP_EMST.xml&amp;entityIdiomaName=CS_ASTB_IDIOMASTOP_IDST.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.statusopor.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>STATUS_ESTAGIO_VENDA</name>
+			<label>prompt.oportunidadeStatusEstagio</label>
+			<link>AdministracaoCsAstbEstagiostatusEsst.do</link>
+			<image>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.statusestagio.visualizacao</permission-depends>
+		</item> 
+		
+		<item>
+			<name>NIVEL_DECISORIO</name>
+			<label>prompt.oportunidadeNivelDecisorio</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_NIVELDECISORIO_NIDE.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESANIDE_EMNI.xml&amp;entityIdiomaName=CS_ASTB_IDIOMANIDE_IDNI.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Anexo_Email.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Anexo_Email.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.niveldecisorio.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>PARCEIRO</name>
+			<label>prompt.oportunidadeParceiro</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_PARCEIRO_PARC.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAPARCEIRO_EMPA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPARCEIRO_IDPA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Relacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.parceiro.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>PAPEL_FORNECEDOR</name>
+			<label>prompt.oportunidadePapelParceiro</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_PAPEL_PAPE.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAPAPEL_EMPA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPAPEL_IDPA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Regra.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Regra.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.papel.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CONCORRENTE</name>
+			<label>prompt.oportunidadeConcorrente</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_CONCORRENTE_CONC.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESACONC_EMCO.xml&amp;entityIdiomaName=CS_ASTB_IDIOMACONC_IDCO.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Midia.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Midia.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.concorrente.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>TIPO_NEGOCIO</name>
+			<label>prompt.oportunidadeTipoNegocio</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_TIPONEGOCIO_TPNE.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESATPNE_EMTN.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATPNE_IDTN.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Manifestacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Manifestacao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tiponegocio.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>PRODUTO_SFA</name>
+			<label>prompt.produtoSFA</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_PRODUTOSFA_PRSF.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAPRSF_EMPS.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPRSF_IDPS.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Retorno.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Retorno.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.produtosfa.visualizacao</permission-depends>
+		</item>		
+
+		<item>
+			<name>TIPO_NEGOCIO_PRODUTO</name>
+			<label>prompt.tipoNegocioProduto</label>
+			<link>AdministracaoCsAstbTpnegocioprodutoTpnp.do</link>
+			<image>webFiles/Menu/images/mvert/Equipamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Equipamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tpnegproduto.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>TPNEG_ESTRATEGIAVENDA</name>
+			<label>prompt.tpnegEstagioVenda</label>
+			<link>AdministracaoCsAstbTpnegestagiovendaTnev.do?</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tpnegestagiovenda.visualizacao</permission-depends>
+		</item>		
+
+		
+		<item>
+			<name>TAREFA_LISTA</name>
+			<label>prompt.tarefaLista</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_TAREFALISTA_TALI.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESATALI_EMTA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATALI_IDTA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Ressarcimento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tarefalista.visualizacao</permission-depends>
+		</item>		
+
+		
+		<item>
+			<name>FUNC. VENDEDOR</name>
+			<label>prompt.EquipeDeVendasXVendedor</label>
+			<link>AdministracaoCsAstbFuncareavendaFuav.do</link>
+			<image>webFiles/Menu/images/mvert/Estado_Civil.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Estado_Civil.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.funcionariovendedor.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>TIPO DE PUBLICO LEAD</name>
+			<label>prompt.tipoPublicolead</label>
+			<link>AdministracaoCsCdtbTipoPublicoLeadTpul.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Publico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Publico.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.tipodepublicolead.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>OBJECAO OPORTUNIDADE</name>
+			<label>prompt.objecaoOpor</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_OBJECAOOPOR_OBOP.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAOBOP_EMOB.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAOBOP_IDOB.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.objecaoopor.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>BOTAO TIPO PUBLICO LEAD</name>
+			<label>prompt.botaoTpPublicoLead</label>
+			<link>AdministracaoCsAstbBotaotpulBotu.do</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.objecaoopor.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>MOTIVO OMISSAO</name>
+			<label>prompt.motivoOmissao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_CDTB_MOTIVOOMISSAO_MOOM.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_EMPRESAMOOM_EMMO.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMOOM_IDMO.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.sfa.motivoomissao.visualizacao</permission-depends>
+		</item>
+		
+		<!--item>
+			<name>ESTAGIO VENDA X ATEND. PADRAO</name>
+			<label>prompt.tpNegEstVendaAtpd</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/sfa/CS_ASTB_TPNEGESTVENDATPD_NEAP.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/bt_permissionamento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_permissionamento.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends></permission-depends>
+		</item-->
+		
+	</menu>
+	
+	<menu>
+		<name>FARMACO</name>
+		<label>prompt.farmaco</label>
+		<resource-depends>apl.feature.farmaco</resource-depends>
+		
+		<item>
+			<name>PROFISSAO</name>
+			<label>prompt.profissao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_PROFISSAO_PROF.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPROF_IDPR.xml&amp;temMultiempresa=false&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Avaliador.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Avaliador.gif</image-disabled>
+			<resource-depends>apl.feature.farmaco</resource-depends>
+			<permission-depends>adm.farmaco.profissao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>ESPECIALIDADE MEDICA</name>
+			<label>prompt.especialidadeMedica</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_ESPECIALIDADE_ESPE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAESPE_IDES.xml&amp;temMultiempresa=false&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Saude.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Saude.gif</image-disabled>
+			<resource-depends>apl.feature.farmaco</resource-depends>
+			<permission-depends>adm.farmaco.especmedica.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>TIPO RELATOR</name>
+			<label>prompt.tipoRelator</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_TIPORELATOR_TIRE.xml&amp;entityIdiomaName=CS_ASTB_IDIOMATIRE_IDTI.xml&amp;temMultiempresa=false&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Publico.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Publico.gif</image-disabled>
+			<resource-depends>apl.feature.farmaco</resource-depends>
+			<permission-depends>adm.farmaco.tiporelator.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>RESULTADO FARMA</name>
+			<label>prompt.resultadoFarma</label>
+			<link>AdministracaoCsCdtbResultadoFarmaRefa.do</link>
+			<image>webFiles/Menu/images/mvert/Resultado_Farma.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Resultado_Farma.gif</image-disabled>
+			<resource-depends>apl.feature.farmaco</resource-depends>
+			<permission-depends>adm.farmaco.resultadofarma.visualizacao</permission-depends>
+		</item>
+		<item>
+			<name>RAÇA</name>
+			<label>prompt.raca</label>
+			<link>AdministracaoCsCdtbRacaRaca.do</link>
+			<image>webFiles/Menu/images/mvert/Raca.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Raca.gif</image-disabled>
+			<resource-depends>apl.feature.farmaco</resource-depends>
+			<permission-depends>adm.farmaco.raca.visualizacao</permission-depends>
+		</item>			
+
+		
+	</menu>
+	
+	<menu>
+		<name>PRODUÇÃO CIENTÍFICA</name>
+		<label>prompt.producaoCientifica</label>
+		<resource-depends>apl.feature.prodcientifica</resource-depends>
+		
+		<item>
+			<name>TIPO DE CLASSIFICAÇÃO</name>
+			<label>prompt.tipoClassificacao</label>
+			<link>AdministracaoCsCdtbTpClassificacaoTpcl.do</link>
+			<image>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Tipo_Classificacao.gif</image-disabled>
+			<permission-depends>adm.producaocientifica.tipodeclassificacao.visualizacao</permission-depends>
+			<resource-depends>apl.feature.prodcientifica</resource-depends>
+		</item>
+		<item>
+			<name>CLASSIFICAÇÃO</name>
+			<label>prompt.classificacao</label>
+			<link>AdministracaoCsCdtbClassificacaoClas.do</link>
+			<image>webFiles/Menu/images/mvert/Classificacao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Classificacao.gif</image-disabled>
+			<permission-depends>adm.producaocientifica.classificacao.visualizacao</permission-depends>
+			<resource-depends>apl.feature.prodcientifica</resource-depends>
+		</item>
+		<item>
+			<name>MATÉRIA</name>
+			<label>prompt.materia</label>
+			<link>AdministracaoCsCdtbMateriaMate.do</link>
+			<image>webFiles/Menu/images/mvert/Materia.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Materia.gif</image-disabled>
+			<permission-depends>adm.producaocientifica.materia.visualizacao</permission-depends>
+			<resource-depends>apl.feature.prodcientifica</resource-depends>
+		</item>
+		<item>
+			<name>MATÉRIA / DETALHE</name>
+			<label>prompt.materiaDetalhe</label>
+			<link>AdministracaoCsAstbMateriaDetalheMadt.do</link>
+			<image>webFiles/Menu/images/mvert/Materia_Detalhe.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Materia_Detalhe.gif</image-disabled>
+			<permission-depends>adm.producaocientifica.materiadetalhe.visualizacao</permission-depends>
+			<resource-depends>apl.feature.prodcientifica</resource-depends>
+		</item>
+		<item>
+			<name>MATÉRIA / PRODUTO</name>
+			<label>prompt.materiaProduto</label>
+			<link>AdministracaoCsAstbMateriaProdutoMapr.do</link>
+			<image>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/bt_Materia_Produto2.gif</image-disabled>
+			<permission-depends>adm.producaocientifica.materiaproduto.visualizacao</permission-depends>
+			<resource-depends>apl.feature.prodcientifica</resource-depends>
+		</item>
+
+	</menu>
+	
+	<menu>
+		<name>CHAT</name>
+		<label>prompt.chat</label>
+		<resource-depends></resource-depends>
+		
+		<item>
+			<name>FILA CHAT</name>
+			<label>prompt.filaChat</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_CDTB_FILACHAT_FICH.xml&amp;entityEmpresaName=br/com/plusoft/chat/dao/xml/CS_ASTB_EMPRESAFICH_EMFI.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAFICH_IDFI.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.filachat.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO ENCERR</name>
+			<label>prompt.motivoEncerramento</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_CDTB_MOTENCERCHAT_MECH.xml&amp;entityEmpresaName=br/com/plusoft/chat/dao/xml/CS_ASTB_EMPRESAMECH_EMME.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMECH_IDME.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.motivoencerramentochat.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO TRANS</name>
+			<label>prompt.motivoTrans</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_CDTB_MOTIVOTRANCHAT_MTCH.xml&amp;entityEmpresaName=br/com/plusoft/chat/dao/xml/CS_ASTB_EMPRESAMTCH_EMMT.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAMTCH_IDMT.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.motivotransfchat.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>CAMPOS CHAT</name>
+			<label>prompt.parametroChat</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_CDTB_CHATCAMPOS_CHCA.xml&amp;entityEmpresaName=br/com/plusoft/chat/dao/xml/CS_ASTB_EMPRESACHCA_EMCH.xml&amp;entityIdiomaName=CS_ASTB_IDIOMACHCA_IDCH.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.chatcampos.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>FILA FUNC</name>
+			<label>prompt.filaXfuncionario</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_ASTB_FILACHATFUNC_FCFU.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.filafunc.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>FILA ATEND</name>
+			<label>prompt.filaXAtendPadrao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_ASTB_FICHATENDPADRAO_FCAT.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.filaatendpadrao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>FILA REGRA</name>
+			<label>prompt.filaXRegra</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_ASTB_FILACHATREGRA_FCRE.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.filaregra.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>NOTAS RAPIDAS</name>
+			<label>prompt.notasRapidas</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_CDTB_NOTARAPIDA_NORA.xml&amp;entityEmpresaName=br/com/plusoft/chat/dao/xml/CS_ASTB_EMPRESANORA_EMNO.xml&amp;entityIdiomaName=CS_ASTB_IDIOMANORA_IDNO.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AtendPadrao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AtendPadrao.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.notasrapidas.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>HORA X FILA</name>
+			<label>prompt.horasXFila</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/chat/dao/xml/CS_ASTB_HORASUTEISFICH_HUFC.xml&amp;telaEdit=edit&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.horasuteisfila.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>SITE</name>
+			<label>prompt.siteChat</label>
+			<link>../ChatWEB/AbrirTelaSiteChat.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.chat.sitechat.visualizacao</permission-depends>
+		</item>
+		
+	</menu>
+	
+	<menu>
+		<name>ASSISTENTE</name>
+		<label>prompt.assistente</label>
+		<resource-depends>apl.feature.assistente</resource-depends>
+		<item>
+			<name>ASSISTENTE</name>
+			<label>prompt.assuntoassistente</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_ASSUNTOASSISTENTE_ASAS.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAASAS_EMAA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAASAS_IDAA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/AssuntoAssistente.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/AssuntoAssistente.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.assuntoassistente.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>GRUPO ASSISTENTE</name>
+			<label>prompt.grupoassistente</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_GRUPOASSISTENTE_GRAS.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAGRAS_EMGA.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAGRAS_IDGA.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/GrupoAssistente.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/GrupoAssistente.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.grupoassistente.visualizacao</permission-depends>
+		</item>				
+		<item>
+			<name>INSTRUCAO</name>
+			<label>prompt.assistenteInstrucao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_INSTRUCAO_INST.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAINST_EMIN.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAINST_IDIN.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Instrucao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Instrucao.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.instrucao.visualizacao</permission-depends>
+		</item>				
+
+		<item>
+			<name>PROCEDIMENTO</name>
+			<label>prompt.assistenteProcedimento</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_PROCEDIMENTO_PROC.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAPROC_EMPR.xml&amp;entityIdiomaName=CS_ASTB_IDIOMAPROC_IDPR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Procedimento.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Procedimento.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.procedimento.visualizacao</permission-depends>
+		</item>				
+
+		<item>
+			<name>INSTRUCAO / PROCEDIMENTO</name>
+			<label>prompt.assistenteProcInstrucao</label>
+			<link>AdministracaoCsAstbProcinstrucaoPrin.do</link>
+			<image>webFiles/Menu/images/mvert/ProcedimentoInstrucao.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/ProcedimentoInstrucao.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.procedimentoinstrucao.visualizacao</permission-depends>
+		</item>				
+
+		<item>
+			<name>REFERENCIA</name>
+			<label>prompt.assistenteReferencia</label>
+			<link>AdministracaoCsCdtbReferenciaRefe.do</link>
+			<image>webFiles/Menu/images/mvert/Referencia.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Referencia.gif</image-disabled>
+			<resource-depends>apl.feature.assistente</resource-depends>
+			<permission-depends>adm.assistente.referencia.visualizacao</permission-depends>
+		</item>				
+	</menu>
+	
+	<menu>
+		<name>COBRANCA</name>
+		<label>prompt.cobranca</label>
+		<resource-depends>apl.feature.cobranca</resource-depends>
+		
+		<item>
+			<name>EMPRESA COBRANCA</name>
+			<label>prompt.empresaCobranca</label>
+			<link>empresaCobranca.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.empresaCobrancao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>ACAO COBRANCA</name>
+			<label>prompt.acaoCobranca</label>
+			<link>acaoCobranca.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.cobranca.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>REGRAS NEGOCIACAO</name>
+			<label>prompt.regrasNegociacao</label>
+			<link>regrasNegociacao.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.regraNegociacao.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>GRUPO REGRAS NEGOCIACAO</name>
+			<label>prompt.GrupoRegraNegociacao</label>
+			<link>AbrirGrupoRegrasNegociacao.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.grupo.regra.negociacao.cobranca.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>INFO BOLETO</name>
+			<label>prompt.infoBoleto</label>
+			<link>infoBoleto.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.informacaoBoleto.visualizacao</permission-depends>
+		</item>
+	
+		<item>
+			<name>CADASTRO METAS</name>
+			<label>prompt.cadastroMetas</label>
+			<link>cadastroMetas.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.cadastroMeta.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>ESTRATEGIAS</name>
+			<label>prompt.estrategias</label>
+			<link>estrategias.do?userAction=init</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.cadastroEstrategias.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>IMPORTACAO</name>
+			<label>prompt.importacaoCobranca</label>
+			<link>AbrirTelaImportacaoCobranca.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.importacao.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>LAYOUT IMPORTACAO</name>
+			<label>prompt.LayoutImportacao</label>
+			<link>AbrirTelaLayoutImportacao.do</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.layout.imp.visualizacao</permission-depends>
+		</item>		
+		
+		<item>
+			<name>MOTIVO CANCELAMENTO NEGOCIACAO</name>
+			<label>prompt.motivoCancelamentoNegociacao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_CDTB_MOTIVOCANCELANEGO_MOCN.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_EMPRESAMOTCANNEGO_EMCN.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_IDIOMAMOTCANNEG_IMCN.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.motivocancelamentonego.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO LOGS TELEFONIA</name>
+			<label>prompt.MotivoLogsTelefonia</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_MOTIVOLOGSTEL_MOLT.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESAMOTLOGSTEL_EMLT.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_IDIOMAMOTLOGSTEL_IMLT.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.motivo.logs.tel.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO BAIXA</name>
+			<label>prompt.MotivoBaixa</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_CDTB_MOTIVOBAIXA_MOBA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_EMPRESAMOTBAIXA_EMMB.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_IDIOMAMOTBAIXA_IMMB.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.motivo.baixa.cobranca.visualizacao</permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO QUEBRA DE RÉGUA</name>
+			<label>prompt.MotivoQuebraRegua</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_CDTB_MOTIVOQUEBRAREGRA_MOQR.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_EMPRESAMOTQUEREG_EMMR.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_IDIOMAMOTQUEBREG_IDMR.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends>adm.motivo.quebraregua.cobranca.visualizacao</permission-depends>
+		</item>
+
+		<item>
+			<name>PARAMETROS DE REMUNERAÇÃO</name>
+			<label>prompt.parametroRemuneracao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_CDTB_EMPRESAPARAM_EMPA.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_EMPRESAPARAMEMPR_EMPE.xml&amp;temMultiempresa=true&amp;temMultiIdioma=false</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends></permission-depends>
+		</item>
+		
+		<item>
+			<name>MOTIVO EXPIRAÇÃO</name>
+			<label>prompt.motivoExpiracao</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_CDTB_MOTIVOEXPIRA_MOEX.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_EMPRESAMOTEXP_EMME.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/cobranca/CB_ASTB_IDIOMAMOTEXP_IDME.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/mnvopt11.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/mnvopt11dis.gif</image-disabled>
+			<resource-depends></resource-depends>
+			<permission-depends></permission-depends>
+		</item>
+	</menu>
+	
+	<menu>
+		<name>VISITAS</name>
+		<label>prompt.visitas</label>
+		<resource-depends>apl.feature.visita</resource-depends>
+
+		<item>
+			<name>TipoVisita</name>
+			<label>prompt.tipoVisita</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_TIPOVISITA_TIVI.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESATIVI_EMTV.xml&amp;entityIdiomaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_IDIOMATIVI_IDTV.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Linha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Linha.gif</image-disabled>
+			<resource-depends>apl.feature.visita</resource-depends>
+			<permission-depends>adm.visita.tipo.visualizacao</permission-depends>
+		</item>	
+		
+		
+		<item>
+			<name>StatusVisita</name>
+			<label>prompt.statusVisita</label>
+			<link>GenericAdm.do?entityName=br/com/plusoft/csi/adm/dao/xml/CS_CDTB_STATUSVISITA_STVI.xml&amp;entityEmpresaName=br/com/plusoft/csi/adm/dao/xml/CS_ASTB_EMPRESASTVI_EMSV.xml&amp;entityIdiomaName=CS_ASTB_IDIOMASTVI_IDSV.xml&amp;temMultiempresa=true&amp;temMultiIdioma=true</link>
+			<image>webFiles/Menu/images/mvert/Linha.gif</image>
+			<image-disabled>webFiles/Menu/images/mvert/Linha.gif</image-disabled>
+			<resource-depends>apl.feature.visita</resource-depends>
+			<permission-depends>adm.visita.status.visualizacao</permission-depends>
+		</item>
+	</menu>
+	
+	<menu>
+		<name>funcExtras</name>
+		<label>prompt.funcoesextra</label>
+		<resource-depends></resource-depends>	
+	</menu>
+	
+</application>

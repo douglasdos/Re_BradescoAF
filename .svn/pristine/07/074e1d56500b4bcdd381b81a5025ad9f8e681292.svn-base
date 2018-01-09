@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="popup">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Identificação</title>
+	<link rel="stylesheet" href="../../styles/commons/ps.css">
+	<link rel="stylesheet" href="../../styles/crm-funcoes-extras/iframeIdentificacao.css">
+</head>
+<body style="padding: 0 !important">
+	<div class="list">
+		<table>
+			<thead>
+				<tr>
+					<th class="list-identificacao-col-nome"><span>Nome</span></th>
+					<th class="list-identificacao-col-cpfcnpj"><span>CPF/CNPJ</span></th>
+					<th class="list-identificacao-col-dt-nascimento"><span>Dt Nascimento</span></th>
+					<th class="list-identificacao-col-ddd"><span>DDD</span></th>
+					<th class="list-identificacao-col-telefone"><span>Telefone</span></th>
+				</tr>
+			</thead>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td class="list-identificacao-col-nome">JOÃO ALMEIDA</td>
+					<td class="list-identificacao-col-cpfcnpj">333.222.555-33</td>
+					<td class="list-identificacao-col-dt-nascimento">15/05/1990</td>
+					<td class="list-identificacao-col-ddd">11</td>
+					<td class="list-identificacao-col-telefone">5544-3322</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="../../vendors/scripts/jquery-1.11.1.js"></script>
+<script src="../../scripts/commons/ps.js"></script>
+</html>

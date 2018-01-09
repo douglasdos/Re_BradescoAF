@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<entity>
+
+	<name>ES_ASTB_OUTROSRESPPESR_OUPE</name>
+	<datasourceFile>br.com.plusoft.config.DataSource</datasourceFile>
+	<type>TABLE</type>
+	<label></label>
+	<label-plural></label-plural>
+
+	<!-- Permissoes da entidade -->
+	<permissions>
+		<permission>
+			<name>visualizacao</name>
+			<key>adm.anhanguera.oferta.visualizacao</key>
+		</permission>
+		<permission>
+			<name>inclusao</name>
+			<key>adm.anhanguera.oferta.inclusao</key>
+		</permission>
+		<permission>
+			<name>alteracao</name>
+			<key>adm.anhanguera.oferta.alteracao</key>
+		</permission>
+		<permission>
+			<name>exclusao</name>
+			<key>adm.anhanguera.oferta.exclusao</key>
+		</permission>
+	</permissions>
+	<!-- Permissoes da entidade -->	
+
+	<!-- Redirecionanto de paginas -->
+	<pages>
+		<page>
+			<name>edit</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>main</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>administracao</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+	</pages>
+	<!-- Redirecionanto de paginas -->	
+
+	<object-business>
+		<name>vo</name>
+		<classname>br.vcom.plusoft.x.x.y.voNovo</classname>
+	</object-business>
+
+	<querys>
+
+		<select-by-condition>
+			SELECT 
+				OUPE_NR_CPF, 
+				OUPE_NM_NOME, 
+				OUPE_NR_SEQUENCIA, 
+				ID_PESS_CD_PESSOA, 
+				PESR_NR_SEQUENCIA
+			FROM 
+				#OWNER#ES_ASTB_OUTROSRESPPESR_OUPE
+			#CRITERIA# 
+		</select-by-condition>
+
+		<create-row>
+			INSERT INTO 
+				#OWNER#ES_ASTB_OUTROSRESPPESR_OUPE(	
+				OUPE_NR_CPF, 
+				OUPE_NM_NOME, 
+				OUPE_NR_SEQUENCIA, 
+				ID_PESS_CD_PESSOA, 
+				PESR_NR_SEQUENCIA
+			)VALUES( 
+				#oupe_nr_cpf#, 
+				#oupe_nm_nome#, 
+				#oupe_nr_sequencia#, 
+				#id_pess_cd_pessoa#, 
+				#pesr_nr_sequencia#
+			) 
+
+		</create-row>
+
+		<update-row>
+			UPDATE #OWNER#ES_ASTB_OUTROSRESPPESR_OUPE
+				#PARAMETER#
+				#CRITERIA#
+		</update-row>
+
+		<remove-row>
+			DELETE 
+			FROM  
+				#OWNER#ES_ASTB_OUTROSRESPPESR_OUPE
+			#CRITERIA# 
+		</remove-row>
+
+	</querys>
+
+	<fields>
+		<field> 
+			<name>OUPE_NR_CPF</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>1</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>OUPE_NM_NOME</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>2</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>OUPE_NR_SEQUENCIA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>3</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>ID_PESS_CD_PESSOA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>4</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>PESR_NR_SEQUENCIA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>5</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+
+	</fields>
+</entity>

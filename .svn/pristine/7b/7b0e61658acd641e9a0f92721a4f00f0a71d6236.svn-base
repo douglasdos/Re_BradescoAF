@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<tiles-definitions>
+
+	<definition name=".espec.identificacao" 
+ 	 			 path="/crm/fieb/dadosPessoa/ifrmIdentificacao.jsp">
+ 	 </definition>	
+ 	 
+ 	 <definition name=".espec.identificacao" 
+ 	 			 path="/crm/fieb/dadosPessoa/ifrmIdentificacao.jsp">
+ 	 </definition>	
+ 	 
+ 	 <definition name=".espec.identificacao.lista" 
+ 	 			 path="/crm/fieb/dadosPessoa/ifrmLstIdentificacao.jsp">
+ 	 </definition>	
+ 	 
+ 	 <definition name=".espec.identificacao.listaCorp" 
+ 	 			 path="/crm/fieb/dadosPessoa/ifrmLstIdentificacaoCorp.jsp">
+ 	 </definition>	
+ 	 
+ 	 <definition name=".espec.identificacao.lista.corp.lstCorp" 
+ 	 			 path="/crm/fieb/dadosPessoa/ifrmLstCorp.jsp">
+ 	 </definition>	
+
+
+</tiles-definitions>

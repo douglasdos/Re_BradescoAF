@@ -1,0 +1,501 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<properties>
+		<br.com.plusoft.group>plusoft.clientes.bradescoaf</br.com.plusoft.group>
+		<br.com.plusoft.kernelversion>04.29.03</br.com.plusoft.kernelversion>
+		<project.build.sourceEncoding>cp1252</project.build.sourceEncoding>
+	</properties>
+
+	<groupId>plusoft.clientes.bradescoaf</groupId>
+	<artifactId>CrmPlusoft-bradescore</artifactId>
+	<packaging>ear</packaging>
+	<version>1.0</version>
+	<name>Java EE ear</name>
+
+	<parent>
+		<groupId>plusoft.clientes.bradescoaf</groupId>
+		<artifactId>base</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<dependencies>
+		
+		<dependency>
+  			<groupId>com.bradseg</groupId>
+  			<artifactId>bsad-utilities</artifactId>
+  			<version>2.3</version>
+  			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jboss-j2ee</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+  			<groupId>com.bradseg</groupId>
+  			<artifactId>afinidade</artifactId>
+  			<version>1.0</version>
+  			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jboss-j2ee</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.bradseg</groupId>
+			<artifactId>ctggateway</artifactId>
+			<version>2.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jboss-j2ee</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>${br.com.plusoft.group}</groupId>
+			<artifactId>CsiCore</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jboss-j2ee</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>${br.com.plusoft.group}</groupId>
+			<artifactId>csiweb-bradescore</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jboss-j2ee</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.struts</groupId>
+					<artifactId>struts-taglib</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.2</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-core</artifactId>
+			<version>1.3.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-extras</artifactId>
+			<version>1.3.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-tiles</artifactId>
+			<version>1.3.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmWEB-taglib</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>Base</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>Base-war</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>MatchCode-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>plusfw-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaEJB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaLIB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaLib-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaWEB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SSOWEB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>2.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>zehon</groupId>
+			<artifactId>file-transfer</artifactId>
+			<version>1.1.6</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.8</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://172.16.1.47:8180/nexus/content/repositories/snapshots
+			</url>
+		</repository>
+	</distributionManagement>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>wagon-maven-plugin</artifactId>
+				<version>1.0-beta-3</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.wagon</groupId>
+						<artifactId>wagon-ssh</artifactId>
+						<version>1.0-beta-7</version>
+					</dependency>
+				</dependencies>
+
+				<configuration>
+					<serverId>jboss</serverId>
+					<url>scp://172.16.1.124/</url>
+					<toDir>/opt/AppServers/jboss-4.0.2/server/assurant/deploy/</toDir>
+					<includes>*.ear</includes>
+					<fromDir>target/</fromDir>
+				</configuration>
+
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.0-beta-2</version>
+				<configuration>
+					<container>
+						<containerId>jboss4x</containerId>
+						<type>remote</type>
+					</container>
+					<configuration>
+						<type>runtime</type>
+						<properties>
+							<cargo.hostname>172.16.1.124</cargo.hostname>
+							<cargo.servlet.port>8380</cargo.servlet.port>
+							<cargo.remote.username>admin</cargo.remote.username>
+							<cargo.remote.password>admin</cargo.remote.password>
+						</properties>
+					</configuration>
+					<deployer>
+						<type>remote</type>
+						<deployables>
+							<deployable>
+								<groupId>${br.com.plusoft.group}</groupId>
+								<artifactId>ear</artifactId>
+								<type>ear</type>
+								<location>/opt/AppServers/jboss-4.0.2/server/assurant/deploy/ear-1.0.ear
+								</location>
+							</deployable>
+						</deployables>
+					</deployer>
+
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>					
+					<modules>
+						<ejbModule>
+							<groupId>${br.com.plusoft.group}</groupId>
+							<artifactId>CsiCore</artifactId>
+							<bundleFileName>CsiCore-1.0.jar</bundleFileName>											
+						</ejbModule>
+					</modules>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>
+
+
+

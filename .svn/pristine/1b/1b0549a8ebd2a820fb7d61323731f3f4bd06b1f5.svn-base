@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ListarNaturezas" targetNamespace="http://canonico.listarnaturezas.sare.bradseg.com.br/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://canonico.listarnaturezas.sare.bradseg.com.br/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="ListarNaturezas.xsd"/>
+        <binding hasEncoding="false" imported="true" name="ListarNaturezas" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+          <xsd:schema targetNamespace="http://canonico.listarnaturezas.sare.bradseg.com.br/v1" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+			<xsd:include schemaLocation="http://ws-mb.dsv.bradseg.com.br:7801/SARE-ListarNaturezas?xsd=xsd0"/>
+    	  </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="listarNaturezasRequest">
+    <wsdl:part element="tns:listarNaturezasRequest" name="listarNaturezasRequest"/>
+  </wsdl:message>
+  <wsdl:message name="listarNaturezasResponse">
+    <wsdl:part element="tns:listarNaturezasResponse" name="listarNaturezasResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ListarNaturezas_PortType">
+    <wsdl:operation name="listarNaturezas">
+      <wsdl:input message="tns:listarNaturezasRequest"/>
+      <wsdl:output message="tns:listarNaturezasResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ListarNaturezas" type="tns:ListarNaturezas_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="listarNaturezas">
+      <soap:operation soapAction="http://canonico.listarcausas.sare.bradseg.com.br/v1"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="listarNaturezas">
+    <wsdl:port binding="tns:ListarNaturezas" name="ListarNaturezas">
+      <soap:address location="http://ws-mb.dsv.bradseg.com.br:7801/SARE-ListarNaturezas"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

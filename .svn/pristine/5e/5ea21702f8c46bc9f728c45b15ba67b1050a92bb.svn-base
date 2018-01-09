@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>
+	
+    	<form-bean name="confCampanhaForm" type="org.apache.struts.validator.DynaValidatorForm">
+    		<form-property name="idPessCdPessoa" type="java.lang.String" />
+    		<form-property name="idPublCdPublico" type="java.lang.String" />
+    		<form-property name="confCampanhaViewState" type="java.lang.String" />
+    		<form-property name="indice" type="java.lang.String" />
+    		<form-property name="id_publ_cd_publico" type="java.lang.String" />
+    		<form-property name="publ_ds_publico" type="java.lang.String" />
+    		<form-property name="coca_cd_importacao" type="java.lang.String" />
+    		<form-property name="id_empr_cd_empresa" type="java.lang.String" />
+    		<form-property name="coca_ds_nomearquivo" type="java.lang.String" />
+    		<form-property name="coca_in_tipoproces" type="java.lang.String" />
+    		<form-property name="coca_dt_dataproces" type="java.lang.String" />
+    		<form-property name="coca_dt_datainclusao" type="java.lang.String" />
+    		<form-property name="coca_in_erro" type="java.lang.String" />
+    		<form-property name="coca_ds_login" type="java.lang.String" />
+    		<form-property name="coca_ds_resultado" type="java.lang.String" />
+	    </form-bean>	
+	    
+		<form-bean name="ajaxPlusoftForm" type="org.apache.struts.validator.DynaValidatorForm">
+       		<form-property name="listViewState" type="java.lang.String"></form-property>
+		</form-bean>		    
+		
+	</form-beans>
+
+	<global-exceptions>
+	</global-exceptions>
+
+	<global-forwards>
+
+		<forward name="detalhe" path="/webFiles/operadorapresenta/ifrmDetalhe.jsp" />
+		<forward name="erro" path="/erro.jsp" />
+		<forward name="erroAcesso" path="./webFiles/operadorapresenta/index.jsp" />
+		<forward name="index"
+			path="./webFiles/operadorapresenta/index.jsp?sessao=expirada" />
+
+	</global-forwards>
+
+	<action-mappings>
+	
+		<action path="/ConfigurePlugin" type="com.plusoft.plugin.ConfigurePluginAction">
+			<set-property property="attribute"
+				value="br/com/plusoft/csi/espec/plugin/plugin.xml" />
+		</action>
+
+		<action path="/inicializarSessao"
+			type="br.com.plusoft.csi.adm.action.generic.GenericAction" scope="request"
+			parameter="inicializarSessao" />
+
+		<action path="/AbreConfiguracaoCampanha"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.ConfiguracaoCampanhaAction"
+			scope="request"
+			name="confCampanhaForm"
+			parameter="abreTelaConfCampanha"
+			validate="false">
+			<forward name="ifrmConfCampanha" path="/confcampanha/ifrmConfiguracaoCampanha.jsp"/>
+		</action>
+		
+		<action path="/CarregarCombo"
+			type="br.com.plusoft.csi.adm.action.generic.AjaxPlusoftAction"
+			name="ajaxPlusoftForm"
+			scope="request"
+			parameter="carregarCombo"
+			validate="false">
+		</action>				
+			
+	</action-mappings>
+
+	<controller processorClass="com.plusoft.plugin.PlusoftPlugin"
+		className="com.plusoft.plugin.ControllerConfigPlusoft">
+		<set-property property="urlKernel" value="/csicrm/ConfigurePlugin.do" />
+	</controller>
+
+	<message-resources parameter="ApplicationResourcesCsi" />
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config"
+			value="/WEB-INF/config/adm/tiles-defs.xml" />
+	</plug-in>
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml,/com/iberia/action/validator-rules-plusoft.xml,/WEB-INF/config/adm/validation.xml" />
+		<set-property property="stopOnFirstError" value="false" />
+	</plug-in>
+</struts-config>

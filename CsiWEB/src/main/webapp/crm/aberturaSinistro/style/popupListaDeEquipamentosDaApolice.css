@@ -1,0 +1,49 @@
+div.list-scroll-vertical {
+	height: 120px;
+}
+.listaDeEquipamentoDaApolice-checkbox {
+	width: 50px;
+}
+.nome {
+	width: 120px;
+}
+.marca {
+	width: 80px;
+}
+.modelo {
+	width: 80px;
+}
+.item {
+	width: 84px;
+}
+.numero-de-serie {
+	width: 100px;
+}
+.ano-fabricacao {
+	width: 90px;
+}
+.quantidade {
+	width: 70px;
+}
+.valor-do-dano {
+	width: 90px;
+}
+.valor-estimado-dos-danos {
+	width: 150px;
+}
+
+.list-scroll-vertical td input[type="text"] {
+	display: none;
+}
+
+#cab_lista {
+	overflow: hidden !important;
+    height: 2px !important;
+}
+
+#cab_lista + .list-scroll-vertical {
+	margin-top: -6px !important;
+}
+div.list-scroll-vertical > table > tbody > tr:hover > td {background-color: transparent !important}
+
+.valor-estimado-dos-danos {width: 154px;}

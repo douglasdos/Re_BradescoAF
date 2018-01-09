@@ -1,0 +1,60 @@
+div.list-scroll-vertical {
+	height: 150px
+}
+.list-checkbox {
+	width: 30px;
+	text-align: center !important;
+}
+
+
+
+list-endereco {
+	width: 28%;
+}
+.list-numero {
+	width: 14%;
+}
+.list-bairro {
+	width: 21%;
+}
+.list-cep {
+	width: 14%;
+}
+.list-uf {
+	width: 6%;
+}
+.list-cidade {
+	width: 15%;
+}
+
+div table tbody tr list-endereco {
+	width: 30%;
+}
+div table tbody tr .list-numero {
+	width: 14%;
+}
+div table tbody tr .list-bairro {
+	width: 21%;
+}
+div table tbody tr .list-cep {
+	width: 14%;
+}
+div table tbody tr .list-uf {
+	width: 7%;
+}
+div table tbody tr .list-cidade {
+	width: 12%;
+}
+
+
+TABLE > TBODY > TR:hover > TD {background-color: transparent !important}
+
+b {
+	float: left;
+	font-weight: bold;
+	margin-top: -10px !important;
+	width: 100%;
+}
+
+#tabelaEndereco {width: 734px}
+

@@ -1,0 +1,29 @@
+################################################################
+#Este arquivo tem o objetivo de retornar o nome do Action de acordo 
+#com o projeto pois cada projetos pode retornar usar diferentes actions
+################################################################
+
+#Arquivo javaScript de funções específicas
+funcoesJS=/csiweb-bradescore/resources/kernel
+
+#Tela de identificacao do sistema
+identificao=../csiweb-bradescore/crm/AbrirTelaIdentificacao.do
+
+#historicoFichaResultado=../csiweb-sodexo/crm/Resultado.do
+
+#InicializacaoSessao ADM
+inicializaSessaoADMCliente=../csiweb-bradescore/adm/inicializarSessao.do
+
+#InicializacaoSessao CRM
+inicializaSessaoCRMCliente=../csiweb-bradescore/crm/inicializarSessao.do
+
+#InicializacaoSessao GERENTE
+inicializaSessaoGERENTECliente=../csiweb-bradescore/ger/inicializarSessao.do
+
+#InicializacaoSessao WORKFLOW
+inicializaSessaoWORKFLOWCliente=../csiweb-bradescore/wor/inicializarSessao.do
+
+#InicializacaoSessao SFA
+#inicializaSessaoSFACliente=../csiweb-sodexo/sfa/inicializarSessao.do
+
+

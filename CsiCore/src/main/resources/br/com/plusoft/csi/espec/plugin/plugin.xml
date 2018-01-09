@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<plugin>
+	<validator-class>br.com.plusoft.csi.espec.plugin.ValidatorPlugin</validator-class>	
+	<jars>
+		<jar>
+			<jar-name>CsiCore-1.0.jar</jar-name>	
+			<validator-class></validator-class>			
+			<classloader-location></classloader-location>	
+		</jar>
+	</jars>
+</plugin>

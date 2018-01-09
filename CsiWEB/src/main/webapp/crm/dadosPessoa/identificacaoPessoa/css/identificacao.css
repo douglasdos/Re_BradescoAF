@@ -1,0 +1,8 @@
+.header-list {
+	margin-top: 0;
+}
+
+#divlupaCpf, #divlupaNome, #divlupaDdd, #divlupaTelefone, #divlupaEmail{
+	margin-top: 17px;
+	display: none;
+}

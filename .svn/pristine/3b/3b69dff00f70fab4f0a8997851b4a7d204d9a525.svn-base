@@ -1,0 +1,38 @@
+div.list-scroll-vertical {
+	margin-left: 17px !important;
+}
+
+.list-NumeroSinistro {
+	width: 100px;
+}
+.list-sucursal {
+	width: 60px;
+}
+.list-ramo {
+	width: 60px;
+}
+.list-cia {
+	width: 40px;
+}
+.list-apolice {
+	width: 65px;
+}
+.list-dataEHoraDoSinistro {
+	width: 100px;
+}
+.list-natureza {
+	width: 80px;
+}
+.list-produto  {
+	width: 90px;
+}
+.list-status {
+	width: 56px;
+}
+.list-lupa {
+	width: 36px;
+}
+
+table > tbody > tr:hover > td {
+	background-color: transparent !important;
+}

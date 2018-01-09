@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 1.1//EN" "http://java.sun.com/j2ee/dtds/ejb-jar_1_1.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>CsiCore</display-name>
+	<enterprise-beans>
+	
+		<session id="MAFinderEspecHelper">
+			<ejb-name>MAFinderEspecHelper</ejb-name>
+			<home>br.com.plusoft.csi.bradescoaf.adm.ejb.MAFinderEspecHelperHome</home>
+			<remote>br.com.plusoft.csi.bradescoaf.adm.ejb.MAFinderEspecHelper</remote>
+			<ejb-class>br.com.plusoft.csi.bradescoaf.adm.ejb.MAFinderEspecHelperBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			
+			<resource-ref id="ResourceRef_1292020770450">
+				<res-ref-name>jdbc/plusoftcrm</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>				
+			</resource-ref>   
+			<resource-ref id="ResourceRef_1292020770451">
+				<res-ref-name>jdbc/pluscep</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>				
+			</resource-ref>   
+			<resource-ref id="ResourceRef_1292020770452">
+				<res-ref-name>jdbc/plusinfo</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>				
+			</resource-ref>   
+		</session>
+				
+	</enterprise-beans>
+</ejb-jar>

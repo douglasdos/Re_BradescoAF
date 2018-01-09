@@ -1,0 +1,135 @@
+nav + .shadow {
+	height: 360px;
+}
+.fieldsetDescricaoDoSinistro {
+	width: 488px;
+	box-sizing: border-box;
+	margin-left: 302px !important;
+	position: absolute;
+	margin-top: -194px;
+}
+.fieldsetDescricaoDoSinistro textarea {
+	height: 141px;
+}
+.fieldsetTipo {
+	margin-top: -10px;
+}
+.fieldsetTipo label {
+	margin-left: 80px;
+}
+.fieldsetTipo label:first-child {
+	margin-left: 20px;
+}
+/*LISTA DE EQUIPAMENTOS*/
+.list-scroll-vertical.listaDeEquipamentos {
+	height: 82px;
+}
+.listaDeEquipamentos-lixeira {
+	width: 22px;
+	text-align: center !important;
+}
+.listaDeEquipamentos-numSerie {
+	width: 60px;
+}
+.listaDeEquipamentos-descricaoDoEquipamentoSinistrado {
+	width: 234px;
+}
+.listaDeEquipamentos-Quantidade {
+	width: 60px;
+	text-align: center !important;
+}
+.listaDeEquipamentos-ValorUnitarioDoEquipamento {
+	width: 120px;
+	text-align: center !important;
+}
+.listaDeEquipamentos-valorDaEstimativaDePrejuizoPorEquip {
+	width: 250px;
+	text-align: center !important;
+}
+/* ABA DETALHE BEM SINISTRADO */
+/* LISTA DE  DETALHE */
+div.detalheBemSinistrado_listDetalhe {
+	height: 120px;
+}
+.listDetalheBemSinistrado-lixeira {
+	width: 26px;
+	text-align: center !important;
+}
+.listDetalheBemSinistrado-descricaoDoItemDoBemSinistrado {
+	width: 330px;
+}
+.listDetalheBemSinistrado-quantidade {
+	width: 70px;
+	text-align: center !important;
+}
+.listDetalheBemSinistrado-valorUnitarioDoItem {
+	width: 130px;
+	text-align: center !important;
+}
+.listDetalheBemSinistrado-valorEstDePrejuizoDosItens {
+	width: 194px;
+	text-align: center !important;
+}
+/*ABA RESPONSÃ�VEL*/
+.cbxMesmoEnderecoDaApolice {
+	position: absolute;
+	margin-top: -15px;
+	margin-left: -30px;
+}
+.cbxMesmoEnderecoDaApolice + .inline {
+	margin-top: 10px;
+}
+#cbxExisteSeguroEmOutraCIA {
+	margin-left: -15px;
+}
+#txaQualCIA {
+	height: 40px;
+}
+/* OUTROS ENVOLVIDOS */
+div.listOutrosEnvolvidos {
+	height: 185px;
+	margin-top: 17px !important;
+}
+.listOutrosEnvolvidos-lixeira {
+	width: 30px;
+	text-align: center !important
+}
+.listOutrosEnvolvidos-nome {
+	width: 500px;
+}
+.listOutrosEnvolvidos-cpfCNPJ {
+	width: 230px;
+}
+
+#btnPesquisarResponsavel {margin-top: -5px}
+
+.col-0-5::after {background-image:url("") !important}
+
+#fieldset_lista_de_outros_envolvidos {width:99%}
+
+.shadow {height: 322px}
+
+table td {
+	border-bottom: 1px solid #7EA5B8;	
+	text-transform	: uppercase;
+	cursor: pointer;
+}
+
+#tabelaEquipamentos,
+#tabelaDetalhe {
+	width: 760px;	
+}
+td {padding-left: 3px}
+
+
+.shadow {
+	height: 367px;
+}
+
+.line + nav {
+	margin-top: 5px !important;
+}
+
+fieldset + fieldset {margin-top: 0 !important}
+
+.line > label[class^='col-']:after {margin-right: -2px !important;}

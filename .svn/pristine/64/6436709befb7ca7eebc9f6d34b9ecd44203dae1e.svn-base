@@ -1,0 +1,1591 @@
+/* CSS VERSÃƒO 2.0 - JS E CSS TEM QUE SER A MESMA VERSÃƒO */
+/* ALGUMAS REGRAS... */
+/* SPAN NÃƒO PODE TER BOTÃƒO DENTRO */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html {
+	background-color: #f4f4f4;
+	overflow-x: hidden;
+}
+html body > * {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size:11px !important;
+}
+/* AJUSTE PARA O CHROME */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	html {
+		padding: 0 2px
+	}
+}
+/* AJUSTE PARA O FIREFOX */
+@-moz-document url-prefix() { 
+  html {
+		padding: 0 2px
+	}
+}
+/* === INPUTS,SELECT, LABEL, SPAN, TEXTAREA === */
+p {
+	margin: 10px 0;
+}
+label {
+	line-height: 16px;
+	height: 16px;
+}
+a {
+	line-height: 15px;
+	text-decoration: underline;
+}
+
+span {
+	vertical-align: top;
+	padding-top: 3px;
+	display: inline-block;
+}
+iframe {
+	width: 98.99% !important;
+}
+span[title],
+img[title] {
+	cursor: pointer;
+}
+hr {
+	border: 0.5px solid #7088C5;
+	width: 99.7%;
+	margin-left: 0;
+}
+/* DEIXA O TEXTO CENTRALIZADO VERTICALMENTE */
+.inline > span {
+	line-height: 11px;
+}
+label > span {
+	display: inline;
+}
+/* DEIXA O TEXTO CENTRALIZADO VERTICALMENTE E DEIXA O TEXTO EM CAIXA ALTA*/
+.inline > strong {
+	line-height: 15px;
+	text-transform: uppercase;
+}
+strong {
+	font-weight: bold;
+}
+/* ALINHA O CHECKBOX/RADIO */
+input[type="checkbox"],
+input[type="radio"] {
+	vertical-align: middle;
+	margin-right: 2px;
+	margin-top: -1px;
+}
+/* ALINHA O CHECKBOX/RADIO COM O LABEL */
+label + input[type="checkbox"],
+label + input[type="radio"] {
+	margin-top: -2px;
+}
+label + span > input[type="checkbox"],
+label + span > input[type="radio"] {
+	margin-top: -5px;
+}
+html.popup input[type="checkbox"],
+html.popup input[type="radio"] {
+	margin-right: 4px;
+	margin-bottom: -1px;
+}
+textarea {
+	resize: none;
+}
+/* === FIM INPUTS,SELECT, LABEL, SPAN, TEXTAREA === */
+
+/* === FIELDSET / LEGEND === */
+fieldset {
+	width: 98.99%;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	display: block;
+    float: left;
+    margin: 0;
+    min-height: 11px;
+    background-color: #f4f4f4;
+    border: 1px solid #80A3C1;
+    padding: 2em 0.5em 0.5em;
+    border-radius: 7px 0 0 0;
+    box-sizing: border-box;
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+html.adm-funcoes-extras {
+	overflow: hidden;
+}
+html.adm-funcoes-extras body > form > fieldset,
+html.adm-funcoes-extras body > form > .inline > fieldset {
+	height: 585px;
+}
+/* LARGURA DO QUADRO CONFIGURAÃ‡ÃƒO */
+html.adm-funcoes-extras form fieldset.configuration {
+	width: 18.40%;
+}
+/* QUADRO DE CONFIGURAÃ‡ÃƒO E DO QUADRO DE DADOS DE CONFIGURAÃ‡ÃƒO COM DISTANCIA DO TOPO */
+html.adm-funcoes-extras form fieldset.configuration,
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset,
+html.adm-funcoes-extras form fieldset.configuration + fieldset {
+	margin-top: 0.4em;
+}
+/* LARGURA DO QUADRO DE DADOS DE CONFIGURAÃ‡ÃƒO*/
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset,
+html.adm-funcoes-extras form fieldset.configuration + fieldset {
+	width: 77.9% !important;
+}
+/* ALTURA E SCROLL DO QUADRO DE DADOS DE CONFIGURAÃ‡ÃƒO */
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > div,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > div {
+	height: 515px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+/* ALTURA E UM RESET DE SCROLL NO DIV DO(S) BOTÃƒO(Ã•ES) DO RODAPÃ‰ DO QUADRO DE DADOS DE CONFIGURAÃ‡ÃƒO*/
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > div + div,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > div + div {
+	height: 25px;
+	overflow: hidden;
+
+}
+
+html.crm-funcoes-extras body form .inline:first-child > fieldset,
+html.crm-funcoes-extras body form .line:first-child > fieldset {
+    margin-bottom: 5px;
+}
+/* CRM-PESSOAS */
+html.crm-pessoas div.list {
+	height: 190px;
+}
+fieldset > legend {
+	border: 0;
+    padding: 0 15px;
+    background-color: #80A3C1;
+    border-radius: 5px 0 5px 0;
+    color: #ffffff;
+    min-width: 70px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    /* position: absolute; */
+    float: left;
+    margin-top: -23px;
+    margin-left: -6px;
+    font-size: 11px;
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* QUADRO DE CONFIGURAÃ‡ÃƒO E DO QUADRO DE DADOS DE CONFIGURAÃ‡ÃƒO COM DISTANCIA DAS BORDAS DO TÃ�TULO DO LADO ESQUERDO E DIREITO */
+html.adm-funcoes-extras form fieldset.configuration > legend,
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > legend,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > legend {
+	padding: 0 3.9em;
+}
+/* === FIM FIELDSET / LEGEND === */
+
+/* === FIM FIELDSET === */
+/* TABS / NAV / UL > LI */
+.tabs {
+	width: 100%;
+	clear: both;
+	padding: 0px;
+	margin: 10px 0 5px;
+	display: inline-block;
+}
+nav {
+	white-space: nowrap;
+	box-sizing: border-box;
+	height: 10px;
+}
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	nav { 
+		height: 11px;
+	}
+}
+/* #Any Firefox */
+@-moz-document url-prefix() { 
+  nav {
+     height: 11px;
+  }
+}
+.adm-funcoes-extras form.shadow.tabs > nav {
+	margin: 0.5% 0 0.3%;
+}
+/* DISTANCIA DAS ABAS DO TOPO */
+html.popup form nav {
+	margin-top: 12px;
+	margin-bottom: 3px;
+}
+nav > ul {
+	display: inline-block;
+	margin-top: -3px;
+    margin-left: -1px;
+    position: relative;
+    white-space: nowrap;
+}
+/* AJUSTE PRO CHROME */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+      nav > ul {
+            margin-top: -2px;
+      }
+}
+
+html.adm-funcoes-extras form fieldset.configuration > ul {
+	list-style-type: none;
+	margin: -15px 0 0 0.5em;
+	padding: 0;
+	text-transform: uppercase;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 564px;
+}
+nav > ul > li {
+	display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+    text-align: -webkit-match-parent;
+    float: left;
+}
+/* LISTA DO QUADRO CONFIGURAÃ‡ÃƒO */
+html.adm-funcoes-extras form fieldset.configuration > ul > li {
+	margin-top: 0.7em;
+}
+nav > ul > li > a {
+	padding: 2px 11px 3px;
+	color: #87A6B5;
+    min-width: 70px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    background-color: #F4F4F4;
+    border: 2px solid #CCCCCC;
+    border-bottom: none;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    text-decoration: none;
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+html.adm-funcoes-extras form fieldset.configuration > ul > li > a {
+	color: #000000;
+}
+/* COR DE FUNDO DO TEXTO DA LISTA DO QUADRO DE CONFIGURAÃ‡ÃƒO QUANDO ESTÃ� SELECIONADO */
+html.adm-funcoes-extras form fieldset.configuration > ul > li > a.selected {
+	color: blue;
+}
+nav > ul > li.tab-active > a,
+nav > ul > li > a.tab-active,
+nav > ul > li > a:hover {
+	padding: 2px 12px 3px;
+	background-color: #9BB9C8;
+    border: 2px solid #87A6B5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+ul.list-scroll-vertical {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul.list-scroll-vertical > li {
+	border-bottom: 1px solid #CCCCCC;
+	text-transform: uppercase;
+}
+
+/* FIM TABS / NAV / UL > LI */
+
+/* === TABLE / THEAD / TBODY / TR / TD */
+/* HTML ESTRUTURA BÃ�SICA */
+/* <div class="list">
+	<table>
+		<thead>
+			<tr>
+				<th><span>COLUNA</span></th>
+			</tr>
+		</thead>
+	</table>
+	<table>
+		<tbody>
+			<tr>
+				<td>COLUNA</td>
+			</tr>
+		</tbody>
+	</table>
+</div> */
+/* FIM HTML ESTRUTURA BÃ�SICA */
+.header-list {
+    background-color: #7EA5B8;
+    width: 100%;
+    height: 21px;
+    margin-top: 10px;
+}
+fieldset .header-list {
+	margin-top: 0 !important;
+}
+.header-list + .list > table {
+	margin-top: -10px;
+	float: left;
+}
+.header-list + .list > table + table {
+	margin-top: 0;
+}
+.header-list + .list table thead {
+	background-color: transparent;
+	height: inherit;
+}
+.header-list + .list table thead span {
+    position: absolute;
+    height: 19px;
+    line-height: 16px;
+    margin-top: -12px !important;
+}
+/* AS SETAS DE ORDENAÃ‡ÃƒO NA LILSTA PRECISAM TER O CLASS NO SPAN DO TH PRA FUNCIONAR */
+/* SETA ORDEM CRESCENTE */
+.header-list + .list table thead span.ascending-order:after,
+/* SETA ORDEM DECRESCENTE */
+.header-list + .list table thead span.descending-order:after {
+	content: "";
+	position: absolute;
+	vertical-align: middle;
+	margin-left: 7px;
+	margin-top: 6px;
+	width: 0;
+	height: 0;
+	padding:0;
+}
+.header-list + .list table thead span.ascending-order:after {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #ffffff;
+}
+/* SETA ORDEM DECRESCENTE */
+.header-list + .list table thead span.descending-order:after {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #ffffff;
+}
+.header-list + .list table thead span.descending-order:hover {
+	background-color: #56717f;
+	cursor: pointer;
+}
+/* PREENCHE O COMEÃ‡O DO CABEÃ‡ALHO QUANDO TEM HOVER NO SPAN QUE FICA COM UM PEDAÃ‡O A ESQUERDA SEM PREENCHER COM A COR */
+th:first-child > span.descending-order:hover:before,
+th:last-child > span.descending-order:hover:before {
+	content: "";
+    /* background: #56717f; */
+    background-color: red;
+    height: 22px;
+    position: absolute;
+    margin-top: -3px;
+}
+th:first-child > span.descending-order:hover:before {
+    width: 3px;    
+    margin-left: -12px;
+    margin-left: -3px\0/;
+}
+th:last-child > span.descending-order:hover:before {
+    width: 25px;
+    margin-left: 118px;
+    margin-left: 243px\0/;
+}
+/* PREENCHE O FIM DO CABEÃ‡ALHO QUANDO TEM HOVER NO SPAN QUE FICA COM UM PEDAÃ‡O A ESQUERDA SEM PREENCHER COM A COR */
+
+.list {
+	overflow-y: scroll;
+	height: 50px;
+	border: 1px solid #7EA5B8;
+}
+/* ALTURA DA LISTA DA ABA PROCURAR DO CADASTRO */
+html.adm-funcoes-extras form .tabs nav + css3-container +  div.shadow > div:first-child div.list,
+html.adm-funcoes-extras form .tabs nav + div.shadow > div:first-child div.list {
+	height: 415px;
+}
+.list table {
+	margin-top: 0;
+}
+table {
+    width: 99.5%;
+    display: inline-table;
+    margin-top: 10px;
+}
+table thead {
+	background: #7EA5B8;
+    color: #ffffff;
+    font-size: 11px;
+    margin-left: -1px;
+    height: 18px;
+    line-height: 18px;
+}
+table th {
+	text-align: left;
+	padding: 0px 2px;
+	line-height: 18px;
+	font-weight: bold;	
+}
+table th button {
+	margin-bottom: -4px !important;
+	margin-top: 1px !important;
+}
+table + div {
+	overflow-y: scroll;
+    height: 50px;
+    border: 1px solid #7EA5B8;
+    box-sizing: border-box;
+    width: 99.5%;
+}
+/* DESTACA COR DO TR QUANDO PASSAR O MOUSE POR CIMA */
+table > tbody > tr:hover > td {
+	background-color: #E5F2FF !important;
+	cursor: pointer;
+}
+/* ALTERNA A COR DA LISTA QUANDO Ã‰ INSERIDO ESSE STYLE */
+div.list.alternating-color > table > tbody > tr:nth-child(2n+2) > td {
+	background-color: #CFDBE7;	
+}
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	table + div  { 
+		width: 99.4%;
+	}
+}
+table + div table {
+	margin-top: 0;
+}
+table td {
+	border-bottom: 1px solid #7EA5B8;
+    color: #000;
+    padding: 2px 2px 1px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 18px;
+    line-height: 9px;
+    position: relative;
+}
+table td [class^=arrow-]{
+	margin-top: 1px;
+}
+table td button.lixeira {
+	margin-left: 5px;
+}
+table td > span {
+	margin-top: -3px;
+}
+/* === FIM TABLE / THEAD / TBODY / TR / TD */
+/* INPUT,SELECT,LABEL,TEXTAREA,BUTTON ETC */
+input[type="text"],
+input[type="file"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="button"],
+input[type="date"],
+input[type="color"],
+input[type="range"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea,
+label,
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #E0E0E0;
+	text-decoration: none ;
+	box-sizing: border-box;
+	height: 16px;
+}
+textarea {
+	height: inherit;
+}
+label,
+a {
+	border: 0;
+}
+select[multiple] {
+	height: inherit;
+}
+.line > input[type="text"],
+.line > input[type="file"],
+.line > input[type="number"],
+.line > input[type="email"],
+.line > input[type="password"],
+.line > input[type="button"],
+.line > input[type="date"],
+.line > input[type="color"],
+.line > input[type="range"],
+.line > input[type="month"],
+.line > input[type="week"],
+.line > input[type="time"],
+.line > input[type="datetime"],
+.line > input[type="datetime-local"],
+.line > input[type="search"],
+.line > input[type="tel"],
+.line > input[type="url"],
+.line > select,
+.line > textarea,
+.line > label,
+[class^="col-"] > input[type="text"],
+[class^="col-"] > input[type="file"],
+[class^="col-"] > input[type="number"],
+[class^="col-"] > input[type="email"],
+[class^="col-"] > input[type="password"],
+[class^="col-"] > input[type="button"],
+[class^="col-"] > input[type="date"],
+[class^="col-"] > input[type="color"],
+[class^="col-"] > input[type="range"],
+[class^="col-"] > input[type="month"],
+[class^="col-"] > input[type="week"],
+[class^="col-"] > input[type="time"],
+[class^="col-"] > input[type="datetime"],
+[class^="col-"] > input[type="datetime-local"],
+[class^="col-"] > input[type="search"],
+[class^="col-"] > input[type="tel"],
+[class^="col-"] > input[type="url"],
+[class^="col-"] > select,
+[class^="col-"] > textarea,
+[class^="col-"] > label {
+	width: 100%;
+	text-align: left;
+}
+[class^="col-"] > label {
+	display: inline-block;
+}
+/* BOTÃ•ES / BOTOES*/
+/* BOTÃ•ES COLORIDOS */
+button {
+	height: 21px;
+	line-height:20px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* HACK PRO IE 6,7,8 */
+/* IE6, IE7, IE8 */
+/* button { padding: 0.3em 0.8em 0.3em 0.5em\9; } */
+/* BOTÃƒO AZUL */
+.primary {
+	background-color: #0166B4;
+}
+button.primary {
+	border: 1px solid #0166B4;
+	color: #ffffff;
+}
+button.primary:hover {
+	-webkit-box-shadow: 1px 1px 3px 1px #0166B4;
+	-moz-box-shadow: 1px 1px 3px 1px #0166B4;
+	box-shadow: 1px 1px 3px 1px #0166B4;
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* BOTÃƒO VERDE */
+.success,
+.green {
+	background-color: #009736;
+}
+button.success,
+button.green {
+	border: 1px solid #009736;
+	color: #ffffff;
+}
+button.success:hover,
+button.green:hover {
+	-webkit-box-shadow: 1px 1px 3px 1px #009736;
+	-moz-box-shadow: 1px 1px 3px 1px #009736;
+	box-shadow: 1px 1px 3px 1px #009736;	
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* BOTÃƒO VERMELHO */
+.error,
+.red {
+	background-color: #C90200;
+}
+button.error,
+button.red {
+	border: 1px solid #C90200;
+	color: #ffffff;	
+}
+button.error:hover,
+button.red:hover {
+	-webkit-box-shadow: 1px 1px 3px 1px #C90200;
+	-moz-box-shadow: 1px 1px 3px 1px #C90200;
+	box-shadow: 1px 1px 3px 1px #C90200;	
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* BOTÃƒO LARANJA */
+.warning,
+.orange {
+	background-color: #F28D00;
+}
+button.warning {
+	border: 1px solid #F28D00;
+	color: #ffffff;	
+}
+button.warning:hover {
+	-webkit-box-shadow: 1px 1px 3px 1px #F28D00;
+	-moz-box-shadow: 1px 1px 3px 1px #F28D00;
+	box-shadow: 1px 1px 3px 1px #F28D00;	
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* ALINHA A IMAGEM QUE ESTÃ� DENTRO DO BOTÃƒO*/
+button > img {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+button:hover {
+	-webkit-box-shadow: 1px 1px 3px 2px #72716F;
+	-moz-box-shadow: 1px 1px 3px 2px #72716F;
+	box-shadow: 1px 1px 3px 2px #72716F;
+	cursor: pointer;
+    behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+.inline.align-right button, .line.align-right button {
+	margin-left: 5px;
+}
+/* BOTÃƒO TRANSPARENTE*/
+button.transparent,
+button.out,
+button.lixeira18x18,
+button.lixeira,
+button.new,
+button.gravar,
+button.cancelar,
+button.calendar,
+button.bt_selecionar_sim,
+button.bt_selecionar_nao,
+button.marcar-todos,
+button.desmarcar-todos,
+button.lupaPesq,
+button.lupa,
+button.setaTop,
+button.setaBottom,
+button.setaDown,
+button.setaLeft,
+button.voltar_unico,
+button.avancar_unico,
+button.setaRight,
+button.binoculo,
+button.confirmaEdicao,
+button.Folha,
+button.connect,
+button.disassociate,
+button.naoIdentificado,
+button.historico,
+button.Novo,
+button.atualizarDados {
+	border:0;
+	border-radius: 0;	
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+button.transparent:hover,
+button.out:hover,
+button.lixeira18x18:hover,
+button.lixeira:hover,
+button.new:hover,
+button.gravar:hover,
+button.cancelar:hover,
+button.calendar:hover,
+button.bt_selecionar_sim:hover,
+button.bt_selecionar_nao:hover,
+button.marcar-todos:hover,
+button.desmarcar-todos:hover,
+button.lupaPesq:hover,
+button.lupa:hover,
+button.setaTop:hover,
+button.setaBottom:hover,
+button.setaDown:hover,
+button.setaLeft:hover,
+button.voltar_unico:hover,
+button.avancar_unico:hover,
+button.setaRight:hover,
+button.binoculo:hover,
+button.confirmaEdicao:hover,
+button.Folha:hover,
+button.connect:hover,
+button.disassociate:hover,
+button.naoIdentificado:hover,
+button.historico:hover,
+button.Novo:hover,
+button.atualizarDados:hover {
+	background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 0px 0px 0px transparent;
+	-moz-box-shadow: 0px 0px 0px 0px transparent;
+	box-shadow: 0px 0px 0px 0px transparent;
+	behavior: url(../resources/vendors/scripts/PIE.htc);
+}
+/* COLEÃ‡ÃƒO DE BOTÃ•ES COM IMAGENS */
+.out {
+	background-image: url(../../assets/imgs/out.gif);
+	width: 25px;
+	height: 25px;
+}
+button.lixeira,
+img.lixeira {
+	background-image: url(../../assets/imgs/lixeira.gif);
+	width: 14px;
+	height: 14px;
+}
+.lixeira18x18 {
+	background-image: url(../../assets/imgs/lixeira18x18.gif);
+	width: 18px;
+	height: 18px;
+}
+.new {
+	background-image: url(../../assets/imgs/new.gif);
+	width: 14px;
+	height: 16px;
+}
+.gravar {
+	background-image: url(../../assets/imgs/gravar.gif);
+	width: 16px;
+	height: 16px;
+}
+.cancelar {
+	background-image: url(../../assets/imgs/cancelar.gif);
+	width: 16px;
+	height: 16px;
+}
+.calendar {
+	background-image: url(../../assets/imgs/calendar.gif);
+	width: 16px;
+	height: 15px;
+}
+.bt_selecionar_sim,
+.marcar-todos {
+	background-image: url(../../assets/imgs/bt_selecionar_sim.gif) !important;
+	width: 16px;
+	height: 16px;
+	margin: 0 !important;
+}
+.bt_selecionar_nao,
+.desmarcar-todos {
+	background-image: url(../../assets/imgs/bt_selecionar_nao.gif) !important;
+	width: 16px;
+	height: 16px;
+	margin: 0 !important;
+}
+.lupaPesq {
+	background-image: url(../../assets/imgs/lupaPesq.gif);
+	width: 24px;
+	height: 24px;
+}
+.lupa {
+	background-image: url(../../assets/imgs/lupa.gif);
+	width: 15px;
+	height: 15px;
+}
+.setaTop {
+	background-image: url(../../assets/imgs/setaTop.gif);
+	width: 17px;
+	height: 17px;
+}
+.setaBottom {
+	background-image: url(../../assets/imgs/setaBottom.gif);
+	width: 17px;
+	height: 17px;
+}
+.setaDown {
+	background-image: url(../../assets/imgs/setaDown.gif);
+	width: 17px;
+	height: 17px;
+}
+.voltar_unico {
+	background-image: url(../../assets/imgs/voltar_unico.gif);
+	width: 17px;
+	height: 17px;
+}
+.avancar_unico {
+	background-image: url(../../assets/imgs/avancar_unico.gif);
+	width: 17px;
+	height: 17px;
+}
+.setaRight {
+	background-image: url(../../assets/imgs/setaRight.gif);
+	width: 17px;
+	height: 17px;
+}
+.setaLeft {
+	background-image: url(../../assets/imgs/setaLeft.gif);
+	width: 17px;
+	height: 17px;
+}
+.binoculo {
+	background-image: url(../../assets/imgs/binoculo.gif);
+	width: 17px;
+	height: 18px;
+}
+.confirmaEdicao {
+	background-image: url(../../assets/imgs/confirmaEdicao.gif);
+	width: 17px;
+	height: 17px;
+}
+.Folha {
+	background-image: url(../../assets/imgs/Folha.gif);
+	width: 25px;
+	height: 21px;
+}
+.naoIdentificado {
+	background-image: url(../../assets/imgs/naoIdentificado.gif);
+	width: 20px;
+	height: 20px;
+}
+.historico {
+	background-image: url(../../assets/imgs/historico.gif);
+	width: 17px;
+	height: 21px;
+}
+.Novo {
+	background-image: url(../../assets/imgs/Novo.gif);
+	width: 20px;
+	height: 20px;
+}
+.atualizarDados {
+	background-image: url(../../assets/imgs/atualizarDados.gif);
+	width: 19px;
+	height: 20px;
+	margin-top: -2px;
+}
+/* FIM COLEÃ‡ÃƒO DE BOTÃ•ES COM IMAGENS */
+
+/* AJUSTE POSICIONAMENTO DE BOTÃƒO */
+.line > [class^="col-"] > button.setaDown {
+	margin-top: 15px;
+	margin-bottom: -2px;
+}
+fieldset > .line + .line button,
+fieldset > .inline + .inline button {
+	margin-top: 3px;
+}
+/* FIM AJUSTE POSICIONAMENTO DE BOTÃƒO*/
+
+/* FIM INPUT,SELECT,LABEL,TEXTAREA ETC */
+
+/* === CLASSES === */
+/* CORES TEXTO */
+.text-primary {
+	color: #0166B4;
+}
+.text-success,
+.text-green {
+	color: #009736;
+}
+.text-error,
+.text-red {
+	color: #C90200;
+}
+.text-warning,
+.text-orange {
+	color: #F28D00;
+}
+/* FIM CORES TEXTO */
+	html.crm-funcoes-extras,
+	html.popup {
+		background-color: #FFFCF4;
+	}
+	html.popup body  {
+		padding: 7px;
+	}
+	/* SOMBRAS */
+	.shadow {	
+		-webkit-box-shadow: 1px 1px 3px 0px #7088C5;
+		-moz-box-shadow: 1px 1px 3px 0px #7088C5;
+		box-shadow: 1px 1px 3px 0px #7088C5;
+		border:1px solid #7088C5;
+		padding: 5px;
+		background-color: #f4f4f4;
+		/* display: flex; */
+		box-sizing: border-box;
+	    behavior: url(../resources/vendors/scripts/PIE.htc);
+	}
+	.shadow > div {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	html.adm-funcoes-extras body > form.shadow {
+		border-top:0;
+		margin-top: -1px;
+		/* ALTURA HEIGHT DO QUADRO PRINCIPAL DO CADASTRO */
+		height: 575px;
+	}
+	/* AJUSTE PARA O CHROME */
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+		html.adm-funcoes-extras body > form.shadow {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	/* AJUSTE PARA O FIREFOX */
+	@-moz-document url-prefix() { 
+	  html.adm-funcoes-extras body > form.shadow {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	html.adm-funcoes-extras  body > form.shadow nav + css3-container + div.shadow,
+	html.adm-funcoes-extras  body > form.shadow nav + div.shadow {
+		height: 507px;
+		margin-bottom: 1px;
+	}
+	/* SIMULA UM SELECT COM MULTIPLE PRA ACEITAR CAMPOS DENTRO COMO (RADIO,CHECKBOX) QUE UM SELECT COM MULTIPLE NÃƒO ACEITA */
+	.fake-select-multiple {
+		background-color: #ffffff;
+		border: 1px solid #868686;
+		min-height: 20px;
+		border-right: 0;
+		border-bottom: 0;
+		padding: 0 3px;
+		box-sizing: border-box;
+	}
+	/* SIMULA UM TEXTAREA PRA ACEITAR CAMPOS DENTRO COMO (RADIO,CHECKBOX) QUE UM TEXTAREA NÃƒO ACEITA */
+	.fake-textarea {
+		background-color: #ffffff;
+		border: 1px solid #D6D6D6;
+		min-height: 20px;
+		padding: 0 3px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+	/* APARÃŠNCIA DE DESABILITADO */
+		.disabled {
+			color: #000000;
+			background-color: #EFEFEC;
+			cursor: initial !important;
+		}
+		input[disabled],
+		select[disabled],
+		textarea[disabled],
+		input[disabled="disabled"],
+		select[disabled="disabled"],
+		textarea[disabled="disabled"] {
+			color: #000000;
+			background-color: #f4f4f4;
+		}
+		button[disabled],
+		button[disabled="disabled"] {
+			opacity: 0.7;
+			filter: alpha(opacity=70); 
+		}
+	/* FIM APARÃŠNCIA DE DESABILITADO */
+	/* REGRAS PRA ASSOCIAR E DESASSOCIAR */
+	/* QUANDO TIVER .LINE */
+	.line.connect-disassociate {
+		text-align: center;
+	}
+	.line.connect-disassociate .connect {
+		background-image: url(../../assets/imgs/setaBottom.gif);
+		width: 17px;
+		height: 17px;
+		margin-right: 25px;
+	}
+	.line.connect-disassociate .disassociate {
+		background-image: url(../../assets/imgs/setaTop.gif);
+		width: 17px;
+		height: 17px;
+		margin-right: 25px;
+	}
+	/* QUANDO TIVER .INLINE */
+	.inline.connect-disassociate {
+		text-align: center;
+	}
+	.inline.connect-disassociate > fieldset,
+	.inline.connect-disassociate > span {
+		display: block;
+	    float: left;
+	    min-height: 11px;
+	    box-sizing: border-box;
+	    margin-right: 0.86%;
+	}
+	.inline.connect-disassociate fieldset {
+    	width: 44.899% !important;
+		height: 100px;
+	}
+	.inline.connect-disassociate > span {
+		width: 7.46% !important;
+		height: 60px;	
+	}
+	.inline.connect-disassociate > span span {
+		width: 100% !important;		
+	}
+	.inline.connect-disassociate > span > span + span {
+		margin-top: 25px;
+	}
+	.inline.connect-disassociate .connect {
+		background-image: url(../../assets/imgs/setaRight.gif);
+		width: 17px;
+		height: 17px;
+	}
+	.inline.connect-disassociate .disassociate {
+		background-image: url(../../assets/imgs/setaLeft.gif);
+		width: 17px;
+		height: 17px;
+	}
+	/* ALINHAR TEXTO A DIREITA */
+	.inline > label[class^="col-"],
+	.inline > span[class^="col-"] {
+		text-align: right;
+	}
+	/* INSERI NO ELEMENTO A SETA AZUL */
+	.inline > label[class^="col-"]:after,
+	.inline > span[class^="col-"]:after {
+		content: '';
+		background-image: url(../../assets/imgs/setaAzul.gif);
+		display:inline-block;
+		width: 5px;
+		height: 7px;
+		margin-left: 3px;
+		margin-right: -2px;
+	}
+	/* REMOVE A SETA AZUL QUANDO TEM UM LABEL DEPOIS DO OUTRO */
+	.inline > label[class^="col-"] + label:after,
+	.inline > label[class^="col-"] + span:after {
+		background: transparent;		
+	}
+	/* ALINHA PRA ESQUERDA QUANDO EXISTE UMA LABEL APÃ“S A OUTRA */
+	.inline > label[class^="col-"] + label {
+		text-align: left !important;
+	}
+	.inline > span[class^="col-"]:after
+	.pagination {
+		width: 100%;
+		clear: both;
+		padding: 0 10px;
+		margin: 0.2em 0;
+		display: inline-block;
+	}
+	/* PRECISA DO IMPORTANT PRA SOBRESCREVER O ESTILO BUTTON.TRANSPARENT:HOVER; */
+	.pagination button {
+		margin-left: 5px !important;
+	}
+	.pagination span {
+		vertical-align: super;
+		margin-left: 3px;
+		display: inline-block;
+	}
+	.pagination input[type="text"] {
+		width: 35px;
+	}
+	/* STYLE DESABILITADO */
+	button.disabled > img,
+	img.disabled {
+		opacity: 0.5;
+		filter: alpha(opacity=50); /* For IE8 and earlier */
+		cursor: default;
+	}
+	/* STYLE DESABILITADO */
+	/* SETAS */
+	.arrow-left,
+	.arrow-right,
+	.arrow-top,
+	.arrow-bottom {
+	  content: "";
+	  position: absolute;
+	  vertical-align: middle;
+	  margin-left: 3px;
+	  width: 0;
+	  height: 0;
+	  padding:0;
+	}
+	/* DIREÃ‡ÃƒO E COR DA SETA */
+	.arrow-left {
+		margin-top: 2px;
+		margin-left:4px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 5px solid black;
+	}
+	.arrow-right {
+		margin-top: 2px;
+		margin-left:6px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid black;
+	}
+	.arrow-top {
+		margin-top: 4px;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid black;
+	}
+	.arrow-bottom {
+		margin-top: 5px;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid black;
+	}
+	/* SETA AZUL */
+	.arrow-left.primary {
+		border-right: 5px solid #0166B4;
+	}
+	.arrow-right.primary {
+		border-left: 5px solid #0166B4;
+	}
+	.arrow-top.primary {
+		border-bottom: 5px solid #0166B4;
+	}
+	.arrow-bottom.primary {
+		border-top: 5px solid #0166B4;
+	}
+	/* SETA VERDE  */
+	.arrow-left.success,
+	.arrow-left.green {
+		border-right: 5px solid #009736;
+	}
+	.arrow-right.success,
+	.arrow-right.green {
+		border-left: 5px solid #009736;
+	}
+	.arrow-top.success,
+	.arrow-top.green {
+		border-bottom: 5px solid #009736;
+	}
+	.arrow-bottom.success,
+	.arrow-bottom.green {
+		border-top: 5px solid #009736;
+	}
+	/* SETA VERNELHA  */
+	.arrow-left.error,
+	.arrow-left.red {
+		border-right: 5px solid #C90200;
+	}
+	.arrow-right.error,
+	.arrow-right.red {
+		border-left: 5px solid #C90200;
+	}
+	.arrow-top.error,
+	.arrow-top.red {
+		border-bottom: 5px solid #C90200;
+	}
+	.arrow-bottom.error,
+	.arrow-bottom.red {
+		border-top: 5px solid #C90200;
+	}
+	/* SETA LARANJA  */
+	.arrow-left.warning,
+	.arrow-left.orange {
+		border-right: 5px solid #009736;
+	}
+	.arrow-right.warning,
+	.arrow-right.orange {
+		border-left: 5px solid #009736;
+	}
+	.arrow-top.warning,
+	.arrow-top.orange {
+		border-bottom: 5px solid #009736;
+	}
+	.arrow-bottom.warning,
+	.arrow-bottom.orange {
+		border-top: 5px solid #009736;
+	}
+	/* RESET PRA TIRAR A COR DO BACKGROUND QUANDO Ã‰ INSERIDO O ESTILO DE SETA */
+	.arrow-left.primary,
+	.arrow-right.primary,
+	.arrow-top.primary,
+	.arrow-bottom.primary,
+	.arrow-left.success,
+	.arrow-left.green,
+	.arrow-right.success,
+	.arrow-right.green,
+	.arrow-top.success,
+	.arrow-top.green,
+	.arrow-bottom.success,
+	.arrow-bottom.green,
+	.arrow-left.error,
+	.arrow-left.red,
+	.arrow-right.error,
+	.arrow-right.red,
+	.arrow-top.error,
+	.arrow-top.red,
+	.arrow-bottom.error,
+	.arrow-bottom.red,
+	.arrow-left.warning,
+	.arrow-left.orange,
+	.arrow-right.warning,
+	.arrow-right.orange,
+	.arrow-top.warning,
+	.arrow-top.orange,
+	.arrow-bottom.warning,
+	.arrow-bottom.orange {
+		background-color: transparent !important;
+	}
+	/* FIM SETAS */
+/* === FIM CLASSES === */
+/* LINHA / LINE / INLINE*/
+.line,
+.inline {
+	width: 101.05%;
+	clear: both;
+	margin: 2px 0;
+	display: inline-block;
+}
+/* .ALIGN / ALINHA ELEMENTOS */
+.align-left {
+	text-align: left !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.align-right {
+	text-align: right;
+	margin-right: 0 !important;
+}
+fieldset .inline.align-right button:last-child,
+form .inline.align-right button:last-child {
+	margin-right: 15px;
+}
+/* COLUNAS */
+[class^="col-"] {
+	display: block;
+	float:left;	
+	min-height: 11px;
+	box-sizing: border-box;
+	margin-right: 0.86%;
+}
+
+.col-0-5 {
+	width: 1.65% !important;
+}
+.col-1 {
+	width: 3.3% !important;
+}
+.col-2 {
+	width: 7.46% !important;
+}
+.col-3 {
+	width: 11.62% !important;
+}
+.col-4 {
+	width: 15.77% !important;
+}
+body:nth-of-type(1) .col-4 {
+	width: 15.78% !important;
+}
+.col-5 {
+	width: 19.94% !important;
+}
+.col-6 {
+	width: 24.1% !important;
+}
+body:nth-of-type(1) .col-6 {
+	width: 24.09% !important;
+}
+.col-7 {
+	width: 28.25% !important;
+}
+.col-8 {
+	width: 32.41% !important;
+}
+body:nth-of-type(1) .col-8 {
+	width: 32.42% !important;
+}
+
+.col-9 {
+	width: 36.57% !important;
+}
+body:nth-of-type(1) .col-9 {
+	width: 36.57% !important;
+}
+
+.col-10 {
+	width: 40.74% !important;
+}
+body:nth-of-type(1) .col-10 {
+	width: 40.739% !important;
+}
+
+.col-11 {
+	width: 44.899% !important;
+}
+body:nth-of-type(1) .col-11 {
+	width: 44.9% !important;
+}
+
+.col-12 {
+	width: 49.059% !important;
+}
+
+.col-13 {
+	width: 53.22% !important;
+}
+
+.col-14 {
+	width: 57.38% !important;
+}
+body:nth-of-type(1) .col-14 {
+	width: 57.38% !important;
+}
+
+.col-15 {
+	width: 61.53% !important;
+}
+body:nth-of-type(1) .col-15 {
+	width: 61.54% !important;
+}
+
+.col-16 {
+	width: 65.69% !important;
+}
+body:nth-of-type(1) .col-16 {
+	width: 65.7% !important;
+}
+
+.col-17 {
+	width: 69.85% !important;
+}
+body:nth-of-type(1) .col-17 {
+	width: 69.86% !important;
+}
+
+.col-18 {
+	width: 74.01% !important;
+}
+body:nth-of-type(1) .col-18 {
+	width: 74.02% !important;
+}
+
+.col-19 {
+	width: 78.16% !important;
+}
+body:nth-of-type(1) .col-19 {
+	width: 78.18% !important;
+}
+
+.col-20 {
+	width: 82.33% !important;
+}
+body:nth-of-type(1) .col-20 {
+	width: 82.35% !important;
+}
+
+.col-21 {
+	width: 86.5% !important;
+}
+
+.col-22 {
+	width: 90.66% !important;
+}
+
+.col-23 {
+	width: 94.88% !important;
+}
+body:nth-of-type(1) .col-23 {
+	width: 94.8% !important;
+}
+
+.col-24 {
+	width: 98.99% !important;
+}
+/* FIM COLUNAS */
+/* OFFSETS */
+[class^="offset-"] {
+	display: block;
+	float:left;
+	margin-left: 0.5%;
+	box-sizing: border-box;
+}
+.offset-1 {
+	margin-left: 4.16% !important;
+}
+.offset-2 {
+	margin-left: 8.32% !important;
+}
+.offset-3 {
+	margin-left: 12.48% !important;
+}
+.offset-4 {
+	margin-left: 16.63% !important;
+}
+.offset-5 {
+	margin-left: 20.79% !important;
+}
+.offset-6 {
+	margin-left: 24.94% !important;
+}
+.offset-7 {
+	margin-left: 29.11% !important;
+}
+.offset-8 {
+	margin-left: 33.27% !important;
+}
+body:nth-of-type(1) .offset-8 {
+	margin-left: 33.3% !important;
+}
+
+.offset-9 {
+	margin-left: 37.41% !important;
+}
+body:nth-of-type(1) .offset-9 {
+	margin-left: 37.48% !important;
+}
+
+.offset-10 {
+	margin-left: 41.60% !important;
+}
+body:nth-of-type(1) .offset-10 {
+	margin-left: 41.63% !important;
+}
+
+.offset-11 {
+	margin-left: 45.76% !important;
+}
+body:nth-of-type(1) .offset-11 {
+	margin-left: 45.8% !important;
+}
+
+.offset-12 {
+	margin-left: 49.92% !important;
+}
+body:nth-of-type(1) .offset-12 {
+	margin-left: 49.96% !important;
+}
+
+.offset-13 {
+	margin-left: 54.08% !important;
+}
+body:nth-of-type(1) .offset-13 {
+	margin-left: 54.12% !important;
+}
+
+.offset-14 {
+	margin-left: 58.24% !important;
+}
+body:nth-of-type(1) .offset-14 {
+	margin-left: 58.28% !important;
+}
+
+.offset-15 {
+	margin-left: 62.4% !important;
+}
+body:nth-of-type(1) .offset-15 {
+	margin-left: 62.44% !important;
+}
+
+.offset-16 {
+	margin-left: 66.56% !important;
+}
+body:nth-of-type(1) .offset-16 {
+	margin-left: 66.6% !important;
+}
+
+.offset-17 {
+	margin-left: 70.68% !important;
+}
+body:nth-of-type(1) .offset-17 {
+	margin-left: 70.76% !important;
+}
+
+.offset-18 {
+	margin-left: 74.88% !important;
+}
+body:nth-of-type(1) .offset-18 {
+	margin-left: 74.92% !important;
+}
+
+.offset-19 {
+	margin-left: 79.04% !important;
+}
+body:nth-of-type(1) .offset-19 {
+	margin-left: 79.08% !important;
+}
+
+.offset-20 {
+	margin-left: 83.2% !important;
+}
+body:nth-of-type(1) .offset-20 {
+	margin-left: 83.24% !important;
+}
+
+.offset-21 {
+	margin-left: 87.36% !important;
+}
+body:nth-of-type(1) .offset-21 {
+	margin-left: 87.4% !important;
+}
+
+.offset-22 {
+	margin-left: 91.51% !important;
+}
+body:nth-of-type(1) .offset-22 {
+	margin-left: 91.56% !important;
+}
+
+.offset-23 {
+	margin-left: 95.67% !important;
+}
+body:nth-of-type(1) .offset-23 {
+	margin-left: 95.72% !important;
+}
+/* FIM OFSSETS */
+/* FIM CLASSES */
+
+/* STYLES MÃ“DULOS APLICAÃ‡ÃƒO */
+	/* COR DE FUNDO DO ADM, POPUP */
+	html.adm-funcoes-extras {
+		background-color: #FFFCF4;
+	}
+	/* BORDA ESQUERDA MANIFESTAÃ‡ÃƒO */
+	html.crm-manifestacoes {
+		border: 1px solid #7EA5B8;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 0;
+	}
+	/* ALTURA PADRÃƒO */
+	html.crm-manifestacoes > body {
+		height: 225px;
+	}
+	/* MÃ“DULO CRM-PESSOA */
+	html.crm-pessoas {
+		overflow-x: hidden;
+		padding-left: 16px;
+	}
+	html.crm-pessoas.padding-top,
+	html.crm-manifestacoes.padding-top {
+		padding-top: 15px;
+	}
+/* FIM STYLES MÃ“DULOS APLICAÃ‡ÃƒO */
+
+/* === EXTRAS === */
+table th.lixeira,
+table td.lixeira {
+	width: 4%;
+}
+table th.codigo,
+table td.codigo {
+	width: 16%;
+}
+table th.descricao,
+table td.descricao {
+	width: 60%;
+}
+table th.inativo,
+table td.inativo {
+	width: 20%;
+	text-align: center !important;
+}
+table th.list-marcar-desmarcar-todos,
+table td.list-marcar-desmarcar-todos,
+table th.marcar-desmarcar-todos,
+table td.marcar-desmarcar-todos {
+	width: 5%;
+	text-align: center !important;
+}
+
+/* #Any Firefox */
+@-moz-document url-prefix() { 
+	table th.list-marcar-desmarcar-todos span,
+	table td.list-marcar-desmarcar-todos span,
+	table th.marcar-desmarcar-todos span,
+	table td.marcar-desmarcar-todos span {
+		margin-top: -16px !important;
+	}
+}

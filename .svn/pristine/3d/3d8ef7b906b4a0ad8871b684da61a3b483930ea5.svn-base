@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<entity>
+	<name>CS_CDTB_FUNCIONARIO_FUNC</name>
+	<datasourceFile>br.com.plusoft.config.DataSource</datasourceFile>
+	<type>TABLE</type>
+	<label></label>
+	<label-plural></label-plural>
+
+	<!-- Permissoes da entidade -->	
+	<permissions>
+		
+	</permissions>
+	<!-- Permissoes da entidade -->	
+	
+	<!-- Redirecionamento de paginas -->
+	<pages>
+		<page>
+			<name>edit</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>main</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>administracao</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+	</pages>
+	<!-- Redirecionamento de paginas -->	
+	
+	<object-business>		
+		<name>vo</name>
+		<classname>br.vcom.plusoft.x.x.y.voNovo</classname>
+	</object-business>
+
+	<querys>
+		
+		<select-by-condition>
+			SELECT
+				ID_FUNC_CD_FUNCIONARIO,
+				FUNC_NM_FUNCIONARIO,
+				FUNC_DS_LOGINNAME
+			FROM
+				#OWNER#CS_CDTB_FUNCIONARIO_FUNC
+			#CRITERIA#
+		</select-by-condition>
+	
+		<update-row>
+		</update-row>
+		
+		<create-row>			
+		</create-row>
+		
+	</querys>
+		
+	<fields>
+	
+		<field>
+			<name>ID_FUNC_CD_FUNCIONARIO</name>
+			<type>Long</type>
+			<pk>false</pk>
+			<len>9</len>
+			<sequence>1</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>17%</sizeview>
+			<scriptValidate></scriptValidate>
+			<fk></fk>
+			<views></views>
+		</field>
+		
+	</fields>
+</entity>

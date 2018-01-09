@@ -1,0 +1,4 @@
+build.version=\n${br.com.plusoft.group}\n
+build.subversion=${project.version}\n
+build.number=${br.com.plusoft.kernelversion}
+build.date=${timestamp}

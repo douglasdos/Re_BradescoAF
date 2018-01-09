@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- Shared version number properties -->
+
+	<properties>
+		<br.com.plusoft.group>plusoft.clientes.bradescoaf</br.com.plusoft.group>
+		<plusoft.clientes.scope>provided</plusoft.clientes.scope>
+		<br.com.plusoft.kernelversion>04.29.03</br.com.plusoft.kernelversion>
+		<project.build.sourceEncoding>cp1252</project.build.sourceEncoding>
+	</properties>
+
+	<parent>
+		<groupId>plusoft.clientes.bradescoaf</groupId>
+		<artifactId>base</artifactId>
+		<version>1.0</version>
+	</parent>
+	<groupId>plusoft.clientes.bradescoaf</groupId>
+	<artifactId>csiweb-bradescore</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
+	<name>CsiWEB</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		
+		<dependency>
+			<groupId>com.bradseg</groupId>
+			<artifactId>bsad-utilities</artifactId>
+			<version>2.3</version>
+		</dependency>
+		
+		<dependency>
+  			<groupId>com.bradseg</groupId>
+  			<artifactId>afinidade</artifactId>
+  			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.bradseg</groupId>
+			<artifactId>ctggateway</artifactId>
+			<version>2.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.ibm.cics</groupId>
+			<artifactId>cicseci</artifactId>
+			<version>sulamerica</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.ibm.cics</groupId>
+			<artifactId>cicsframe</artifactId>
+			<version>sulamerica</version>
+		</dependency>
+		
+		<dependency>
+  			<groupId>com.ibm.cics</groupId>
+  			<artifactId>cics</artifactId>
+  			<version>sulamerica</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-core</artifactId>
+			<version>1.3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-extras</artifactId>
+			<version>1.3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-taglib</artifactId>
+			<version>1.3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-tiles</artifactId>
+			<version>1.3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>AdmWEB-taglib</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>Base</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>Base-war</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>CrmWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteEJB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteLIB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>GerenteWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>MatchCode-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>plusfw-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaEJB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaLIB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaLib-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaWEB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SfaWEB-client</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.plusoft</groupId>
+			<artifactId>SSOWEB</artifactId>
+			<version>${br.com.plusoft.kernelversion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>${br.com.plusoft.group}</groupId>
+			<artifactId>CsiCore</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jboss</groupId>
+			<artifactId>jboss-j2ee</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://172.16.1.47:8180/nexus/content/repositories/snapshots
+			</url>
+		</repository>
+	</distributionManagement>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<executions>
+	                <execution>
+	                    <phase>package</phase>
+	                    <configuration>
+	                      <packagingIncludes>
+	                      	crm/**/*.CAB,crm/**/*.PRO,crm/**/*.jar,WEB-INF/lib/struts-taglib-1.3.5*.jar,WEB-INF/lib/AdmWEB-taglib*.jar,**/*.properties,**/*.xml,**/*.png,**/*.css,**/*.js,**/*.jsp,**/*.html,**/*.htm,**/*.vbs,**/*.wsdl,**/*.wsdd,**/*.gif,**/*.jpg,**/*.htc
+							</packagingIncludes>
+							<archive>
+								<manifest>
+									<addClasspath>false</addClasspath>
+									<classpathPrefix>lib/</classpathPrefix>
+								</manifest>
+							</archive>
+	                    </configuration>
+	                    <goals>
+	                        <goal>
+	                            war
+	                        </goal>
+	                    </goals>
+	                </execution>
+	            </executions>
+			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-eclipse-plugin</artifactId> 
+				<version>2.7</version> <configuration> <wtpContextName>/csiweb-bradescoaf</wtpContextName> 
+				<additionalConfig> <file> <name>.settings/org.eclipse.wst.validation.prefs</name> 
+				<content> <![CDATA[ #Tue May 17 09:47:24 BRT 2011 DELEGATES_PREFERENCE=delegateValidatorList 
+				USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.jst.j2ee.internal.web.validation.UIWarValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator; 
+				USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.jst.j2ee.internal.web.validation.UIWarValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator; 
+				USER_PREFERENCE=overrideGlobalPreferencestruedisableAllValidationfalseversion1.2.201.v201101270100 
+				eclipse.preferences.version=1 override=true suspend=false vals/org.eclipse.jst.jsp.core.JSPBatchValidator/global=FF01 
+				vf.version=3 ]]> </content> </file> </additionalConfig> </configuration> 
+				</plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<encoding>ISO-8859-1</encoding>
+				</configuration>
+			</plugin>
+			<plugin> 
+			  <groupId>org.apache.maven.plugins</groupId> 
+			  <artifactId>maven-surefire-plugin</artifactId> 
+			  <version>2.7.2</version> 
+			</plugin> 
+
+		</plugins>
+	</build>
+
+
+</project>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<entity>
+
+	<name>ES_ASTB_EQUIPAMENTOPESR_EQPE</name>
+	<datasourceFile>br.com.plusoft.config.DataSource</datasourceFile>
+	<type>TABLE</type>
+	<label></label>
+	<label-plural></label-plural>
+
+	<!-- Permissoes da entidade -->
+	<permissions>
+		<permission>
+			<name>visualizacao</name>
+			<key>adm.anhanguera.oferta.visualizacao</key>
+		</permission>
+		<permission>
+			<name>inclusao</name>
+			<key>adm.anhanguera.oferta.inclusao</key>
+		</permission>
+		<permission>
+			<name>alteracao</name>
+			<key>adm.anhanguera.oferta.alteracao</key>
+		</permission>
+		<permission>
+			<name>exclusao</name>
+			<key>adm.anhanguera.oferta.exclusao</key>
+		</permission>
+	</permissions>
+	<!-- Permissoes da entidade -->	
+
+	<!-- Redirecionanto de paginas -->
+	<pages>
+		<page>
+			<name>edit</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>main</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+		<page>
+			<name>administracao</name>
+			<forward>/xxxxxxx/x/x/x/x/x/aaa.jsp</forward>
+		</page>
+	</pages>
+	<!-- Redirecionanto de paginas -->	
+
+	<object-business>
+		<name>vo</name>
+		<classname>br.vcom.plusoft.x.x.y.voNovo</classname>
+	</object-business>
+
+	<querys>
+
+		<select-by-condition>
+			SELECT 
+				EQPE_DS_DESCRICAO, 
+				EQPE_DS_SERIEEQUIPAMENTO, 
+				EQPE_DS_MARCA, 
+				EQPE_NR_ANOFRABQUIP, 
+				EQPE_DS_MODELO, 
+				EQPE_NR_QTDE, 
+				EQPE_VL_VALORESTIMADO, 
+				EQPE_VL_VALOR, 
+				PESR_NR_SEQUENCIA, 
+				ID_PESS_CD_PESSOA, 
+				EQPE_NR_SEQUENCIA, 
+				EQPE_DS_ITEM
+			FROM 
+				#OWNER#ES_ASTB_EQUIPAMENTOPESR_EQPE
+			#CRITERIA# 
+		</select-by-condition>
+
+		<create-row>
+			INSERT INTO 
+				#OWNER#ES_ASTB_EQUIPAMENTOPESR_EQPE(	
+				EQPE_DS_DESCRICAO, 
+				EQPE_DS_SERIEEQUIPAMENTO, 
+				EQPE_DS_MARCA, 
+				EQPE_NR_ANOFRABQUIP, 
+				EQPE_DS_MODELO, 
+				EQPE_NR_QTDE, 
+				EQPE_VL_VALORESTIMADO, 
+				EQPE_VL_VALOR, 
+				PESR_NR_SEQUENCIA, 
+				ID_PESS_CD_PESSOA, 
+				EQPE_NR_SEQUENCIA, 
+				EQPE_DS_ITEM
+			)VALUES( 
+				#eqpe_ds_descricao#, 
+				#eqpe_ds_serieequipamento#, 
+				#eqpe_ds_marca#, 
+				#eqpe_nr_anofrabquip#, 
+				#eqpe_ds_modelo#, 
+				#eqpe_nr_qtde#, 
+				#eqpe_vl_valorestimado#, 
+				#eqpe_vl_valor#, 
+				#pesr_nr_sequencia#, 
+				#id_pess_cd_pessoa#, 
+				#eqpe_nr_sequencia#, 
+				#eqpe_ds_item#
+			) 
+
+		</create-row>
+
+		<update-row>
+			UPDATE #OWNER#ES_ASTB_EQUIPAMENTOPESR_EQPE
+				#PARAMETER#
+				#CRITERIA#
+		</update-row>
+
+		<remove-row>
+			DELETE 
+			FROM  
+				#OWNER#ES_ASTB_EQUIPAMENTOPESR_EQPE
+			#CRITERIA# 
+		</remove-row>
+
+	</querys>
+
+	<fields>
+		<field> 
+			<name>EQPE_DS_DESCRICAO</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>1</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_DS_SERIEEQUIPAMENTO</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>2</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_DS_MARCA</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>3</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_NR_ANOFRABQUIP</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>4</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_DS_MODELO</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>5</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_NR_QTDE</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>6</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_VL_VALORESTIMADO</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>7</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_VL_VALOR</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>8</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>PESR_NR_SEQUENCIA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>9</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>ID_PESS_CD_PESSOA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>10</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_NR_SEQUENCIA</name>
+			<type>Long</type>
+			<pk>true</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>11</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+		<field> 
+			<name>EQPE_DS_ITEM</name>
+			<type>String</type>
+			<pk>false</pk>
+			<len>15</len>
+			<acronymlen></acronymlen>
+			<sequence>12</sequence>
+			<label>prompt.codigo</label>
+			<sizeview>10%</sizeview>
+			<scriptValidate></scriptValidate>
+			<allow-null></allow-null>
+			<format></format>
+			<nofield>false</nofield>
+		</field> 
+
+
+	</fields>
+</entity>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE weblogic-ejb-jar PUBLIC '-//BEA Systems, Inc.//DTD WebLogic 7.0.0 EJB//EN' 'http://www.bea.com/servers/wls700/dtd/weblogic-ejb-jar.dtd'>
+<weblogic-ejb-jar>
+		<weblogic-enterprise-bean>
+			<ejb-name>MAFinderEspecHelper</ejb-name>
+			<jndi-name>ejb/com/iberia/ejb/MAFinderEspecHelperHome</jndi-name>
+		</weblogic-enterprise-bean>
+		
+		<weblogic-enterprise-bean>
+			<ejb-name>EnvioPendenciaEspec</ejb-name>
+			<jndi-name>ejb/br/com/plusoft/csi/espec/ejb/EnvioPendenciaEspecHome</jndi-name>
+		</weblogic-enterprise-bean>
+		
+</weblogic-ejb-jar>

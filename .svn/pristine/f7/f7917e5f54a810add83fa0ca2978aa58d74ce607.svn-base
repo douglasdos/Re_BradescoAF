@@ -1,0 +1,641 @@
+/* NORMALIZE */
+html{font-family: Arial, Helvetica, sans-serif;font-size:11px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],/* 1 */
+input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	overflow: hidden;
+}
+
+html.adm-funcoes-extras form {
+	height: 575px;
+}
+
+html.adm-funcoes-extras form nav + css3-container + div.shadow,
+html.adm-funcoes-extras form nav + div.shadow {
+	height: 510px;
+	margin-bottom: 2px;
+}
+
+html.adm-funcoes-extras form nav + css3-container + div.shadow > div:first-child > div.list-scroll-vertical,
+html.adm-funcoes-extras form nav + div.shadow > div:first-child > div.list-scroll-vertical {
+	height: 440px;
+}
+
+html.adm-funcoes-extras form nav {
+	margin-top: 15px;
+}
+
+html.adm-funcoes-extras form fieldset.configuration {
+	width: 18.40%;
+}
+
+html.adm-funcoes-extras form fieldset.configuration > ul {
+	list-style-type: none;
+	margin: -15px 0 0 0.5em;
+	padding: 0;
+	text-transform: uppercase;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 564px;
+}
+
+html.adm-funcoes-extras form fieldset.configuration > ul > li {
+	margin-top: 0.7em;
+}
+html.adm-funcoes-extras form fieldset.configuration > ul > li > a {
+	color: #000000;
+}
+html.adm-funcoes-extras form fieldset.configuration > ul > li > a.selected {
+	color: blue;
+}
+html.adm-funcoes-extras form fieldset.configuration > legend,
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > legend,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > legend {
+	padding: 0 3.9em;
+}
+
+html.adm-funcoes-extras form fieldset.configuration,
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset,
+html.adm-funcoes-extras form fieldset.configuration + fieldset {
+	margin-top: 0.4em;
+}
+
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset,
+html.adm-funcoes-extras form fieldset.configuration + fieldset {
+	width: 77.9% !important;
+}
+
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > div,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > div {
+	height: 515px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+html.adm-funcoes-extras form fieldset.configuration + css3-container + fieldset > div + div,
+html.adm-funcoes-extras form fieldset.configuration + fieldset > div + div {
+	height: 25px;
+	overflow: hidden;
+
+}
+
+html.popup {
+	background-color: #FFFCF4;
+}
+
+html.popup > body {
+	padding: 7px !important;
+}
+
+html.popup body > form iframe {
+	height: 180px;
+	width: 100%;
+}
+
+html.popup body > div.list-scroll-vertical > table > thead > tr > th {
+	line-height: 21px;
+}
+
+html.crm-pessoas {
+	background-color: #f4f4f4;
+	padding-top: 15px;
+}
+
+html.crm-pessoas div.list-scroll-vertical {
+	height: 190px;
+}
+
+/* TABS */
+nav {
+	white-space: nowrap;
+	box-sizing: border-box;
+	height: 14px;
+	margin-left: -1px;
+	margin-top: 5px;
+}
+nav + css3-container + div {
+	margin-left: -2px !important;
+}
+fieldset > nav > ul {
+	margin-left: 0.5em;
+}
+.line + nav {
+	margin-top: 15px;
+}
+nav > ul {
+	display: inline-block;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -1px;
+    position: relative;
+    white-space: nowrap;
+}
+nav > ul > li {
+	display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    text-align: -webkit-match-parent;
+    float: left;
+}
+nav > ul > li > a {
+	padding: 3px 8px 4px;
+	color: #87A6B5;
+    min-width: 70px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    background-color: #F4F4F4;
+    border: 2px solid #CCCCCC;
+    border-bottom: none;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    text-decoration: none;
+    behavior: url(aberturaSinistro/style/PIE.htc);
+}
+nav > ul > li > a:hover {
+	cursor: pointer;
+}
+nav > ul > li > a.tab-active {
+	padding: 3px 9px 4px;
+	background-color: #9BB9C8;
+    border: 2px solid #87A6B5;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+}
+
+/* FIELDSET */
+
+fieldset {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	display: block;
+    float: left;
+    margin-left: 0.5% !important;
+    margin-right: 0.5% !important;
+    min-height: 11px;
+    background-color: #f4f4f4;
+    border: 1px solid #80A3C1;
+    margin: 0 2px;
+    padding: 0 .315em .75em;
+    padding-top: 23px;
+    border-radius: 7px 0 0 0;
+    box-sizing: border-box;
+    behavior: url(aberturaSinistro/style/PIE.htc);
+}
+
+fieldset > legend {
+	border: 0;
+    padding: 0 1.5em;
+    margin-left: -0.4em;
+    background-color: #80A3C1;
+    border-radius: 5px 0 5px 0;
+    color: #ffffff;
+    min-width: 70px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    margin-top: -23px;
+    font-size: 11px;
+    behavior: url(aberturaSinistro/style/PIE.htc);
+}
+
+fieldset + fieldset {
+	margin-top: 10px;
+}
+.line.text-right + fieldset {
+	margin-top: -2px;
+}
+/* BUTTONS */
+div[class^="col-"] + div[class^="col-"] > button {
+	margin-top: 6px;
+}
+button.transparent {
+	border:0;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+}
+button > img {
+    vertical-align: middle;
+}
+div[class^="col-"] > button,
+.line > button {
+	padding: 5px 3px;
+}
+[class^="col-"] > br + button {
+	margin-top: 2px;
+}
+
+/* LINE */
+.line {
+	position: relative;
+	width: 100%;
+	clear: both;
+	padding: 0px;
+	margin: 0.2em 0;
+	display: inline-block;
+}
+
+.line > iframe {
+	width: 100%;
+}
+/* SOMBRAS */
+
+.shadow {
+	-webkit-box-shadow: 1px 1px 3px 0px #7088C5;
+	-moz-box-shadow: 1px 1px 3px 0px #7088C5;
+	box-shadow: 1px 1px 3px 0px #7088C5;
+	border:1px solid #7088C5;
+	padding: 0.5em;
+	background-color: #f4f4f4;
+    behavior: url(aberturaSinistro/style/PIE.htc);
+}
+fieldset > .shadow {
+	margin: 0 0.5em;
+	margin-left: 0.4em !important;
+}
+nav + .shadow {
+	margin-top: 0.25em;
+}
+/* LISTA - TABLE  */
+html.crm-funcoes-extras body > div.list-scroll-vertical {
+	margin-bottom: 0;
+	height: 170px;
+}
+.line + .list-scroll-vertical {
+	margin-top: 2em;
+}
+div.list-scroll-vertical {
+	overflow-y: scroll;
+	overflow-x: hidden;
+    height: 50px;
+    margin: 15px 0.5em 0.5em;
+    border: 1px solid #7EA5B8;
+    box-sizing: border-box;
+}
+div.list-scroll-vertical > table {
+	margin-right: -18px;
+}
+div.list-scroll-vertical > table > thead {
+	position: absolute;
+    margin-top: -19px;
+    background: #7EA5B8;
+    color: #ffffff;
+    font-size: 11px;
+    margin-left: -1px;
+    height: 18px;
+    line-height: 18px;
+}
+div.list-scroll-vertical > table > thead ,  x:-moz-any-link, x:default {
+	margin-top: -18px;
+}
+div.list-scroll-vertical > table > thead > tr > th {
+	line-height: 19px;
+	text-align: left;
+	padding: 0px 2px;
+}
+div.list-scroll-vertical > table > tbody {
+    font-size: 11px;
+}
+div.list-scroll-vertical > table > tbody > tr > td {
+	border-bottom: 1px solid #7EA5B8;
+    color: #000;
+    padding: 1px 2px 0px;
+    text-transform: uppercase;
+    /*background-color: #CFDBE7;	*/
+}
+div.list-scroll-vertical > table > tbody > tr:hover > td {
+	background-color: #E5F2FF !important;
+	cursor: pointer;
+}
+div.list-scroll-vertical.alternating-color > table > tbody > tr:nth-child(2n+2) > td {
+	background-color: #CFDBE7;	
+}
+
+
+/* AJUSTES */
+.capitalize {
+	text-transform: capitalize;	
+}
+/*SUBIR UMA LINHA*/
+.up-a-row {
+	margin-top: -15px;
+}
+/*ALINHAMENTOS*/
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+	margin-right: 0 !important;
+}
+button.disabled > img,
+img.disabled {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	cursor: default;
+}
+.disabled {
+	background-color: #EFEFEC;
+}
+
+[class^="col-"] > input[type="text"],
+[class^="col-"] > input[type="file"],
+[class^="col-"] > input[type="number"],
+[class^="col-"] > input[type="email"],
+[class^="col-"] > input[type="password"],
+[class^="col-"] > input[type="button"],
+[class^="col-"] > input[type="date"],
+[class^="col-"] > input[type="color"],
+[class^="col-"] > input[type="range"],
+[class^="col-"] > input[type="month"],
+[class^="col-"] > input[type="week"],
+[class^="col-"] > input[type="time"],
+[class^="col-"] > input[type="datetime"],
+[class^="col-"] > input[type="datetime-local"],
+[class^="col-"] > input[type="search"],
+[class^="col-"] > input[type="tel"],
+[class^="col-"] > input[type="url"],
+[class^="col-"] > select,
+[class^="col-"] > textarea,
+[class^="col-"] > label {
+	width: 100%;
+	text-align: left;
+}
+
+div[class^="col-"] + div[class^="col-"] > label[class^="col-"] {
+	margin-top: 15px;
+	text-align: left;
+}
+
+/* STYLES INPUTS, SELECTS, TEXTAREAS, LABELS, CHECKBOXS, RADIOS */
+input[type="text"],
+input[type="file"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="button"],
+input[type="date"],
+input[type="color"],
+input[type="range"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea,
+label,
+button,
+a,
+span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #E0E0E0;
+	text-decoration: none ;	
+	box-sizing: border-box;
+	
+}
+input[type="text"],
+select {
+	text-transform: uppercase;
+}
+select > option:hover {
+	background-color: #E5F2FF !important;
+	cursor: pointer;
+}
+textarea {
+	resize: none;
+}
+label,
+a,
+span {
+	border: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+label[class^="col-"] {
+	text-align: right;
+}
+
+span {
+	line-height: 15px;
+}
+[class^="col-"] > label + label {
+	margin-left: 5px;
+}
+
+[class^="col-"] > label + label[class^="col-"] {
+	margin-left: 0.5%;
+}
+
+[class^="col-"] > label,
+label[class^="col-"] {
+	line-height: 15px;
+}
+
+.line > label[class^="col-"]:after {
+	content: '';
+	 background-image: url(../../../resources/assets/imgs/setaAzul.gif); 
+	display:inline-block;
+	width: 5px;
+	height: 7px;	 
+	margin-left: 0.3em;
+    margin-right: -0.5em;
+}
+.line > label[class^="col-"] + label[class^="col-"] {
+	text-align: left;
+}
+.line > label[class^="col-"] + label[class^="col-"]:after {
+	background-image: url( '' );
+}
+.teste {
+	background-color: red;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	vertical-align: text-top;
+	margin-right: 3px;
+}
+/* COLUNAS */
+[class^="col-"] {
+	display: block;
+	float:left;
+	margin-left: 0.5%;
+	margin-right: 0.5% !important;
+	min-height: 11px;
+	box-sizing: border-box;	
+}
+
+.col-0-5 {
+	width: 1.65% !important;
+}
+
+.col-1 {
+	width: 3.16% !important;
+}
+.col-2 {
+	width: 7.32% !important;
+}
+.col-3 {
+	width: 11.48% !important;
+}
+.col-4 {
+	width: 15.63% !important;
+}
+.col-5 {
+	width: 19.79% !important;
+}
+.col-6 {
+	width: 23.94% !important;
+}
+.col-7 {
+	width: 28.11% !important;
+}
+.col-8 {
+	width: 32.25% !important;
+}
+.col-9 {
+	width: 36.41% !important;
+}
+.col-10 {
+	width: 40.60% !important;
+}
+.col-11 {
+	width: 44.73% !important;
+}
+.col-12 {
+	width: 48.88% !important;
+}
+.col-13 {
+	width: 53.10% !important;
+}
+.col-14 {
+	width: 57.19% !important;
+}
+.col-15 {
+	width: 61.36% !important;
+}
+.col-16 {
+	width: 65.50% !important;
+}
+.col-17 {
+	width: 69.68% !important;
+}
+.col-18 {
+	width: 73.82% !important;
+}
+.col-19 {
+	width: 77.97% !important;
+}
+.col-20 {
+	width: 82.15% !important;
+}
+.col-21 {
+	width: 86.30% !important;
+}
+.col-22 {
+	width: 90.46% !important;
+}
+.col-23 {
+	width: 94.59% !important;
+}
+.col-24 {
+	width: 98.82% !important;
+}
+
+/* OFFSETS */
+[class^="offset-"] {
+	display: block;
+	float:left;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	box-sizing: border-box;
+}
+
+.offset-1 {
+	margin-left: 4.66%;
+}
+.offset-2 {
+	margin-left: 8.85%;
+}
+.offset-3 {
+	margin-left: 12.97%;
+}
+.offset-4 {
+	margin-left: 17.13%;
+}
+.offset-5 {
+	margin-left: 21.2%;
+}
+.offset-6 {
+	margin-left: 25.45%;
+}
+.offset-7 {
+	margin-left: 29.6%;
+}
+.offset-8 {
+	margin-left: 33.75%;
+}
+.offset-9 {
+	margin-left: 37.94%;
+}
+.offset-10 {
+	margin-left: 42.1%;
+}
+.offset-11 {
+	margin-left: 46.23%;
+}
+.offset-12 {
+	margin-left: 50.41%;
+}
+.offset-13 {
+	margin-left: 54.59%;
+}
+.offset-14 {
+	margin-left: 58.70%;
+}
+.offset-15 {
+	margin-left: 62.85%;
+}
+.offset-16 {
+	margin-left: 67%;
+}
+.offset-17 {
+	margin-left: 71.19%;
+}
+.offset-18 {
+	margin-left: 75.35%;
+}
+.offset-19 {
+	margin-left: 79.47%;
+}
+.offset-20 {
+	margin-left: 83.69%;
+}
+.offset-21 {
+	margin-left: 87.82%;
+}
+.offset-22 {
+	margin-left: 91.95%;
+}
+.offset-23 {
+	margin-left: 96.14%;
+}

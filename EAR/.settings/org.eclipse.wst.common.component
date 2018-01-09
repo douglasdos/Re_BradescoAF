@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CrmPlusoft-BradescoRE-1.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="CsiCore-1.0.jar" deploy-path="/" handle="module:/resource/CsiCore/CsiCore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cicseci-sulamerica.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/ibm/cics/cicseci/sulamerica/cicseci-sulamerica.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cicsframe-sulamerica.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/ibm/cics/cicsframe/sulamerica/cicsframe-sulamerica.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cics-sulamerica.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/ibm/cics/cics/sulamerica/cics-sulamerica.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis-1.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/axis/axis/1.3/axis-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis-jaxrpc-1.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/axis/axis-jaxrpc/1.3/axis-jaxrpc-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis-saaj-1.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/axis/axis-saaj/1.3/axis-saaj-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wsdl4j-1.5.1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/wsdl4j/wsdl4j/1.5.1/wsdl4j-1.5.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-discovery-0.2.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/mail/mail/1.4/mail-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation-1.1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/javax/activation/activation/1.1/activation-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.2.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-lang/commons-lang/2.2/commons-lang-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SfaWEB-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/SfaWEB/04.45.24/SfaWEB-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SfaWEB-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/SfaWEB-client/04.45.24/SfaWEB-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="csiweb-bradescore-1.0.war" deploy-path="/" handle="module:/resource/csiweb-bradescore/csiweb-bradescore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bsad-utilities-2.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/bradseg/bsad-utilities/2.3/bsad-utilities-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="afinidade-1.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/bradseg/afinidade/1.0/afinidade-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctggateway-2.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/bradseg/ctggateway/2.3/ctggateway-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-core-1.3.5.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-core/1.3.5/struts-core-1.3.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.7.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-chain-1.1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-chain/commons-chain/1.1/commons-chain-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.6.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-digester/commons-digester/1.6/commons-digester-1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-2.1.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-collections/commons-collections/2.1/commons-collections-2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-validator-1.3.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-validator/commons-validator/1.3.0/commons-validator-1.3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oro-2.0.8.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/oro/oro/2.0.8/oro-2.0.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-extras-1.3.5.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-extras/1.3.5/struts-extras-1.3.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-tiles-1.3.5.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-tiles/1.3.5/struts-tiles-1.3.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="_PlusoftLIB-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/_PlusoftLIB-client/04.45.24/_PlusoftLIB-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="_PlusoftEJB-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/_PlusoftEJB-client/04.45.24/_PlusoftEJB-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="_PlusoftCore-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/_PlusoftCore-client/04.45.24/_PlusoftCore-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AdmWEB-taglib-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/AdmWEB-taglib/04.45.24/AdmWEB-taglib-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Base-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/Base/04.45.24/Base-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Base-war-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/Base-war/04.45.24/Base-war-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MatchCode-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/MatchCode-client/04.45.24/MatchCode-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plusfw-client-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/plusfw-client/04.45.24/plusfw-client-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SSOWEB-04.45.24.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/br/com/plusoft/SSOWEB/04.45.24/SSOWEB-04.45.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-net-2.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-net/commons-net/2.0/commons-net-2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="file-transfer-1.1.6.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/zehon/file-transfer/1.1.6/file-transfer-1.1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.8.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/log4j/log4j/1.2.8/log4j-1.2.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

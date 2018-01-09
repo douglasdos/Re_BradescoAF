@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE jboss PUBLIC "-//JBoss//DTD JBOSS 3.0//EN" "http://www.jboss.org/j2ee/dtd/jboss_3_0.dtd">
+<jboss>
+	<enterprise-beans>
+		<session>
+			<ejb-name>MAFinderEspecHelper</ejb-name>
+			<jndi-name>ejb/br/com/plusoft/csi/ejb/MAFinderEspecHelperHome</jndi-name>
+		</session>
+		
+	</enterprise-beans>
+	
+	<resource-managers>
+		<resource-manager>
+			<res-name>jdbc/plusoftcrm</res-name>
+			<res-jndi-name>java:/jdbc/plusoftcrm</res-jndi-name>
+		</resource-manager>
+		<resource-manager>
+			<res-name>jdbc/pluscep</res-name>
+			<res-jndi-name>java:/jdbc/pluscep</res-jndi-name>
+		</resource-manager>
+		<resource-manager>
+			<res-name>jdbc/plusinfo</res-name>
+			<res-jndi-name>java:/jdbc/plusinfo</res-jndi-name>
+		</resource-manager>
+	</resource-managers> 
+</jboss>

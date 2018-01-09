@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services.controller.afinidade.afnd.bradseg.com.br" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://services.controller.afinidade.afnd.bradseg.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:ns1="http://vo.model.afinidade.afnd.bradseg.com.br">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://vo.model.afinidade.afnd.bradseg.com.br">
+<xsd:complexType name="FiltroServiceVo">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="numeroDocumento" type="xsd:string"/>
+<xsd:element minOccurs="0" name="dataFimVigencia" type="xsd:string"/>
+<xsd:element minOccurs="0" name="codigoProduto" type="xsd:int"/>
+<xsd:element minOccurs="0" name="dataInicioVigencia" type="xsd:string"/>
+<xsd:element minOccurs="0" name="tipoFuncionalidade" type="xsd:int"/>
+<xsd:element minOccurs="0" name="tipoDocumento" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="CertificadosServiceOut">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="mensagemErro" type="xsd:string"/>
+<xsd:element minOccurs="0" name="documentosSeguroServiceVo" type="ns1:ArrayOfDocumentoSeguroServiceVo"/>
+<xsd:element minOccurs="0" name="houveErro" type="xsd:boolean"/>
+<xsd:element minOccurs="0" name="codigoErro" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ArrayOfDocumentoSeguroServiceVo">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="DocumentoSeguroServiceVo" type="ns1:DocumentoSeguroServiceVo"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="DocumentoSeguroServiceVo">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="situacaoCertificado" type="xsd:string"/>
+<xsd:element minOccurs="0" name="codigoUnidadeProdutora" type="xsd:int"/>
+<xsd:element minOccurs="0" name="nomeEstipulante" type="xsd:string"/>
+<xsd:element minOccurs="0" name="endossoDetalheUrl" type="xsd:string"/>
+<xsd:element minOccurs="0" name="nomeSegurado" type="xsd:string"/>
+<xsd:element minOccurs="0" name="dataInicioVigencia" type="xsd:string"/>
+<xsd:element minOccurs="0" name="codigoSituacaoCert" type="xsd:long"/>
+<xsd:element minOccurs="0" name="numeroCertificado" type="xsd:long"/>
+<xsd:element minOccurs="0" name="descricaoProduto" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="FiltroServiceAfndVo">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="codigoAfinidade" type="xsd:long"/>
+<xsd:element minOccurs="0" name="tipoFuncionalidade" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="CertificadoServiceOut">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="certificados" type="ns1:DocumentoSeguroServiceVo"/>
+<xsd:element minOccurs="0" name="mensagemErro" type="xsd:string"/>
+<xsd:element minOccurs="0" name="houveErro" type="xsd:boolean"/>
+<xsd:element minOccurs="0" name="codigoErro" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.controller.afinidade.afnd.bradseg.com.br">
+<xsd:element name="buscarEndossoCertificados">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="filtroServiceVo" type="ns1:FiltroServiceVo"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="login" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="buscarEndossoCertificadosResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="ns1:CertificadosServiceOut"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="buscarEndossoCertificado">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="codigoAfinidade" type="ns1:FiltroServiceAfndVo"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="login" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="buscarEndossoCertificadoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" type="ns1:CertificadoServiceOut"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="buscarEndossoCertificadoResponse">
+    <wsdl:part name="parameters" element="tns:buscarEndossoCertificadoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buscarEndossoCertificadosRequest">
+    <wsdl:part name="parameters" element="tns:buscarEndossoCertificados">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buscarEndossoCertificadoRequest">
+    <wsdl:part name="parameters" element="tns:buscarEndossoCertificado">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buscarEndossoCertificadosResponse">
+    <wsdl:part name="parameters" element="tns:buscarEndossoCertificadosResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AfndWebserviceREPortType">
+    <wsdl:operation name="buscarEndossoCertificados">
+      <wsdl:input name="buscarEndossoCertificadosRequest" message="tns:buscarEndossoCertificadosRequest">
+    </wsdl:input>
+      <wsdl:output name="buscarEndossoCertificadosResponse" message="tns:buscarEndossoCertificadosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarEndossoCertificado">
+      <wsdl:input name="buscarEndossoCertificadoRequest" message="tns:buscarEndossoCertificadoRequest">
+    </wsdl:input>
+      <wsdl:output name="buscarEndossoCertificadoResponse" message="tns:buscarEndossoCertificadoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AfndWebserviceREHttpBinding" type="tns:AfndWebserviceREPortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="buscarEndossoCertificados">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="buscarEndossoCertificadosRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarEndossoCertificadosResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarEndossoCertificado">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="buscarEndossoCertificadoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarEndossoCertificadoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AfndWebserviceRE">
+    <wsdl:port name="AfndWebserviceREHttpPort" binding="tns:AfndWebserviceREHttpBinding">
+      <wsdlsoap:address location="http://10.205.104.14/AFND-Afinidade/services/AfndWebserviceRE"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

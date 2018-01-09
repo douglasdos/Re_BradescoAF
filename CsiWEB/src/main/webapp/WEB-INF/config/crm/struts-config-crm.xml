@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<form-beans>    	
+    	
+		<form-bean name="ajaxPlusoftForm" type="org.apache.struts.validator.DynaValidatorForm">
+       		<form-property name="listViewState" type="java.lang.String"></form-property>
+		</form-bean>
+		
+		<form-bean name="afinidadeForm" type="org.apache.struts.validator.DynaValidatorForm">
+       		<form-property name="idPessCdPessoa" type="java.lang.String"></form-property>
+       		<form-property name="idChamCdChamado" type="java.lang.String"></form-property>
+       		<form-property name="pessDsCpf" type="java.lang.String"></form-property>
+       		<form-property name="tipo_doc" type="java.lang.String"></form-property>
+       		<form-property name="data_inicial" type="java.lang.String"></form-property>
+       		<form-property name="data_final" type="java.lang.String"></form-property>
+       		<form-property name="produto" type="java.lang.String"></form-property>
+       		<form-property name="parametro_formato_url" type="java.lang.String"></form-property>
+       		<form-property name="situacao_anterior" type="java.lang.String"></form-property>
+       		<form-property name="situacao_atual" type="java.lang.String"></form-property>
+       		<form-property name="descricao_produto" type="java.lang.String"></form-property>
+       		<form-property name="nome_estipulante" type="java.lang.String"></form-property>
+       		<form-property name="codigo_unidade_produtora" type="java.lang.String"></form-property>
+       		<form-property name="numero_certificado" type="java.lang.String"></form-property>
+       		<form-property name="desc_situacao_anterior" type="java.lang.String"></form-property>
+       		<form-property name="desc_situacao_atual" type="java.lang.String"></form-property>
+       		<form-property name="atend_padrao_semregistros" type="java.lang.String"></form-property>
+		</form-bean>	
+		
+		<!-- F001 - Inicio Tela Identificacao -->
+		<form-bean name="identificaForm" type="org.apache.struts.validator.DynaValidatorForm">
+    		<form-property name="idEmprCdEmpresa" type="java.lang.String"/>
+    		<form-property name="idPessCdPessoa" type="java.lang.String"/>
+    		<form-property name="pessNmPessoa" type="java.lang.String"/>
+    		<form-property name="pessDhNascimento" type="java.lang.String" />
+    		<form-property name="idChamCdChamado" type="java.lang.String" />
+    		<form-property name="pcomDsDdd" type="java.lang.String"/>
+    		<form-property name="pcomDsTelefone" type="java.lang.String"/>
+    		<form-property name="pessDsCgccpf" type="java.lang.String"/>
+    		<form-property name="dataOcorrencia" type="java.lang.String"/>
+    		<form-property name="horaOcorrencia" type="java.lang.String"/>
+    		<form-property name="pcomDsComplemento" type="java.lang.String"/>
+    		<form-property name="rdoFalorSombreSinistro" type="java.lang.String"/>
+    		<form-property name="acao" type="java.lang.String"/>
+    		<form-property name="apol_Sucurcsal" type="java.lang.String"/>
+    		<form-property name="apol_Cia" type="java.lang.String"/>
+    		<form-property name="apol_Ramo" type="java.lang.String"/>
+    		<form-property name="apol_Apolice" type="java.lang.String"/>
+    		<form-property name="siasNrSinistro" type="java.lang.String"/>
+    		
+    		
+    		<form-property name="idEmpresa" type="java.lang.String"/>
+    		
+    		<form-property name="peenDsLogradouro" type="java.lang.String"/>
+    		<form-property name="peenDsNumero" type="java.lang.String"/>
+    		<form-property name="peenDsCep" type="java.lang.String"/>
+    		<form-property name="email" type="java.lang.String"/>
+    		
+    		<form-property name="telefone" type="java.lang.String"/>
+    		<form-property name="pessDsDocumento" type="java.lang.String"/>
+    		
+    		<form-property name="pessDsIerg" type="java.lang.String"/>
+    		<form-property name="pessDsMidiasocial" type="java.lang.String"/>
+    		<form-property name="BIncondicional" type="java.lang.String"/>
+    		<form-property name="BMatchCode" type="java.lang.String"/>
+    		<form-property name="tipoChamado" type="java.lang.String"/>
+    		<form-property name="telaContato" type="java.lang.String"/>
+    		<form-property name="chamado" type="java.lang.String"/>
+    		<form-property name="pess_ds_cgccpf" type="java.lang.String"/>
+    		<form-property name="manifestacao" type="java.lang.String"/>
+    		<form-property name="tpManifestacao" type="java.lang.String"/>
+    		<form-property name="assuntoNivel" type="java.lang.String"/>
+    		<form-property name="assuntoNivel1" type="java.lang.String"/>
+    		<form-property name="assuntoNivel2" type="java.lang.String"/>
+    		<form-property name="maniDhPrevisao" type="java.lang.String"/>
+    		<form-property name="maniDhEncerramento" type="java.lang.String"/>
+    		<form-property name="maniDhAbertura" type="java.lang.String"/>
+    		
+    		<form-property name="telefoneCom" type="java.lang.String"/>
+    		<form-property name="telefoneCel" type="java.lang.String"/>
+    		<form-property name="idMatmCdManiftemp" type="java.lang.String"/>
+    		<form-property name="tela" type="java.lang.String" />
+    		<form-property name="buscaMedico" type="java.lang.String" />
+    		<form-property name="BCorp" type="java.lang.String" />
+    		<form-property name="pessNmApelido" type="java.lang.String" />
+    		<form-property name="pessDsMatricula" type="java.lang.String" />
+    		
+    		
+    		<form-property name="idEmprCdEmpresaCra" type="java.lang.String"/>
+    		<form-property name="idEmprCdEmpresaCsc" type="java.lang.String"/>
+    		<form-property name="vectorLstUnidade" type="java.lang.String"/>
+    		<form-property name="peesDsUnidade" type="java.lang.String"/>
+    		<form-property name="validacao" type="java.lang.String" />
+    		<form-property name="validarConfig" type="java.lang.String" />
+    		
+    		
+    	</form-bean>
+    	<!-- F001 - Inicio Tela Identificacao FIM -->
+		
+		
+		<form-bean name="pesquisaSucursalForm" type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="aure_ds_uf" type="java.lang.String"/>
+			<form-property name="aure_ds_cidade" type="java.lang.String"/>
+			<form-property name="validacao" type="java.lang.String" />
+			<form-property name="validarConfig" type="java.lang.String" />
+		</form-bean>
+		
+		<form-bean name="aberturaSinistroForm" type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="idPessCdPessoa" type="java.lang.String"/>
+			<form-property name="pessDsCgccpf" type="java.lang.String"/>
+			<form-property name="jsonEntrada" type="java.lang.String"/>
+			<form-property name="dataOcorrencia" type="java.lang.String"/>
+			<form-property name="horaOcorrencia" type="java.lang.String"/>
+			<form-property name="ramo" type="java.lang.String"/>
+			<form-property name="causa" type="java.lang.String"/>
+			<form-property name="tipoGravacao" type="java.lang.String"/>
+			<form-property name="cep" type="java.lang.String"/>
+			<form-property name="tipoTela" type="java.lang.String"/>
+			<form-property name="pesrNrSequencia" type="java.lang.String"/>
+			<form-property name="validacao" type="java.lang.String" />
+			<form-property name="validarConfig" type="java.lang.String" />
+		</form-bean>
+		
+		
+	</form-beans>
+
+	<global-exceptions>
+	</global-exceptions>
+
+	<global-forwards>
+		<forward name="erro" path="/erro.jsp" />
+		<forward name="erroAcesso" path="/index.jsp" />
+		<forward name="index" path="/index.jsp?sessao=expirada" />
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/ConfigurePlugin" type="com.plusoft.plugin.ConfigurePluginAction">
+			<set-property property="attribute"
+				value="br/com/plusoft/csi/espec/plugin/plugin.xml" />
+		</action>
+
+		<action path="/inicializarSessao"
+			type="br.com.plusoft.csi.adm.action.generic.GenericAction" scope="request"
+			parameter="inicializarSessao" />
+
+		<action path="/CarregarCombo"
+			type="br.com.plusoft.csi.adm.action.generic.AjaxPlusoftAction"
+			name="ajaxPlusoftForm"
+			scope="request"
+			parameter="carregarCombo"
+			validate="false">
+		</action>			
+		
+		<action path="/AbreTelaAfinidade"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AfinidadeAction"
+			name="afinidadeForm"
+			scope="request"
+			parameter="abreTelaAfinidade"
+			validate="false">
+			<forward name="ifrmAfinidade" path="/afinidade/ifrmAfinidade.jsp"/>
+			<forward name="ifrmAfinidade2" path="/afinidade/ifrmAfinidade2.jsp"/>
+		</action>	
+		
+		<action path="/BuscarCertificados"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AfinidadeAction"
+			name="afinidadeForm"
+			scope="request"
+			parameter="buscarCertificados"
+			validate="false">
+		</action>	
+		
+		<action path="/ValidaSubmitAfinidade"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AfinidadeAction"
+			name="afinidadeForm"
+			scope="request"
+			parameter="validaSubmitAfinidade"
+			validate="false">
+		</action>	
+		
+		<action path="/GravarAtendPadraoAfinidade"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AfinidadeAction"
+			name="afinidadeForm"
+			scope="request"
+			parameter="gravarAtendPadraoAfinidade"
+			validate="false">
+		</action>	
+		
+		<!-- F001 - Inicio Tela Identificacao -->
+		<action path="/AbrirTelaIdentificacao"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.IdentificacaoEspecAction"
+			name="identificaForm"
+			parameter="abrirTelaIdentificacao"
+			scope="request">
+			<forward name="telaIdentificacao" path="/dadosPessoa/identificacaoPessoa/ifrmIdentificacao.jsp" />
+			<forward name="ifrmValidacao" path="/validacao/ifrmValidacao.jsp"/> 
+		</action>
+		
+		<action path="/MostraResultado"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.IdentificacaoEspecAction"
+			name="identificaForm"
+			parameter="mostrarResultado"
+			scope="request">
+			<forward name="telaLstIdentificacao" path="/dadosPessoa/identificacaoPessoa/ifrmLstIdentificacao.jsp" />
+		</action>
+		
+		<action path="/ValidaCpfCnpj"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.IdentificacaoEspecAction"
+			name="identificaForm"
+			parameter="validaCpfCnpj"
+			scope="request">
+		</action>
+		
+		<action path="/BuscarPessoaEspec"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.IdentificacaoEspecAction"
+			name="identificaForm"
+			scope="request"
+			parameter="buscarPessoaEspec"
+			validate="false">
+		</action>
+		
+		
+		<!-- F001 - Inicio Tela Identificacao FIM-->
+		
+		
+		<!-- F002 - Pesquisa Sucursal -->
+		<action path="/AbrirPesquisaSucursalRE"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.PesquisaSucursalAction"
+			name="pesquisaSucursalForm"
+			parameter="abrirPesquisaSucursalRE"
+			scope="request">
+			<forward name="ifrmPesquisadesucursal" path="/pesquisaSucursal/ifrmPesquisadesucursal.jsp" />
+			<forward name="ifrmValidacao" path="/validacao/ifrmValidacao.jsp"/> 
+		</action>
+		
+		<action path="/CarregarUf"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.PesquisaSucursalAction"
+			name="pesquisaSucursalForm"
+			scope="request"
+			parameter="carregarUf"
+			validate="false">
+		</action>
+		
+		<action path="/CarregarMunicipio"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.PesquisaSucursalAction"
+			name="pesquisaSucursalForm"
+			scope="request"
+			parameter="carregarMunicipio"
+			validate="false">
+		</action>
+		
+		<action path="/CarregarSucursal"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.PesquisaSucursalAction"
+			name="pesquisaSucursalForm"
+			scope="request"
+			parameter="carregarSucursal"
+			validate="false">
+		</action>
+		<!-- F002 - Pesquisa Sucursal FIM-->
+		
+		
+		<!-- F003 - Abertura de Sinistro -->
+		<action path="/AbrirApolice"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirApolice"
+			scope="request">
+			<forward name="ifrmApolice" path="/aberturaSinistro/ifrmApolice.jsp" />
+			<forward name="ifrmValidacao" path="/validacao/ifrmValidacao.jsp"/> 
+		</action>
+		
+		<action path="/AbrirIncluirSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirIncluirSinistro"
+			scope="request">
+			<forward name="ifrmPopupAberturaSinistro" path="/aberturaSinistro/ifrmPopupAberturaSinistro.jsp" />
+			<forward name="ifrmValidacao" path="/validacao/ifrmValidacao.jsp"/> 
+		</action>
+		
+		<action path="/CarregarComboTipoRelacaoIncluirSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarComboTipoRelacaoIncluirSinistro"
+			validate="false">
+		</action>
+		
+		<action path="/CarregarComboCausaIncluirSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarComboCausaIncluirSinistro"
+			validate="false">
+		</action>
+		
+		<action path="/CarregarComboNaturezaIncluirSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarComboNaturezaIncluirSinistro"
+			validate="false">
+		</action>
+		
+		<action path="/ObterDadosApolice"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="obterDadosApolice"
+			validate="false">
+		</action>
+		
+		<action path="/CarregarGrupoRamos"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarGrupoRamos"
+			validate="false">
+		</action>
+		
+		<action path="/AbrirListaEnderecoSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirListaEnderecoSinistro"
+			scope="request">
+			<forward name="ifrmPopupListaDeEndereco" path="/aberturaSinistro/ifrmPopupListaDeEndereco.jsp" /> 
+		</action>
+		
+		<action path="/AbrirListaEquipamentoSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirListaEquipamentoSinistro"
+			scope="request">
+			<forward name="ifrmPopupListaDeEquipamentos" path="/aberturaSinistro/ifrmPopupListaDeEquipamentos.jsp" /> 
+		</action>
+		
+		<action path="/CarregarContaCorrente"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarContaCorrente"
+			validate="false">
+		</action>
+		
+		<action path="/AbrirListaContaCorrenteSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirListaContaCorrenteSinistro"
+			scope="request">
+			<forward name="ifrmPopupContasDisponiveis" path="/aberturaSinistro/ifrmPopupContasDisponiveis.jsp" /> 
+		</action>
+		
+		<action path="/GravarSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="gravarSinistro"
+			validate="false">
+		</action>
+		
+		
+		<action path="/CarregarCepSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarCepSinistro"
+			validate="false">
+		</action>
+		
+		<action path="/AbrirSinistro"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			parameter="abrirSinistro"
+			scope="request">
+			<forward name="ifrmConsultaSinistro" path="/aberturaSinistro/ifrmConsultaSinistro.jsp" />
+			<forward name="ifrmValidacao" path="/validacao/ifrmValidacao.jsp"/> 
+		</action>
+		
+		<action path="/CarregarSinistros"
+			type="br.com.plusoft.csi.bradescoaf.crm.action.AberturaSinistroAction"
+			name="aberturaSinistroForm"
+			scope="request"
+			parameter="carregarSinistros"
+			validate="false">
+		</action>
+		
+		
+	</action-mappings>
+
+	<controller processorClass="com.plusoft.plugin.PlusoftPlugin"
+		className="com.plusoft.plugin.ControllerConfigPlusoft">
+		<set-property property="urlKernel" value="/csicrm/ConfigurePlugin.do" />
+	</controller>
+
+	<message-resources parameter="ApplicationResourcesCsi" />
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config"
+			value="/WEB-INF/config/crm/tiles-defs.xml" />
+	</plug-in>
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml,/com/iberia/action/validator-rules-plusoft.xml,/WEB-INF/config/crm/validation.xml" />
+		<set-property property="stopOnFirstError" value="false" />
+	</plug-in>
+</struts-config>

@@ -1,0 +1,27 @@
+div.list-scroll-vertical {
+	height: 100px;
+}
+.listContasDisponiveis-radio {
+	width: 30px;
+	text-align: center !important;
+}
+.listContasDisponiveis-banco {
+	width: 300px;
+}
+.listContasDisponiveis-agencia {
+	width: 120px;
+}
+.listContasDisponiveis-conta {
+	width: 147px;
+}
+
+DIV.list-scroll-vertical > TABLE > TBODY > TR:hover > TD {background-color: transparent !important}
+
+#tabelaConta {width: 616px}
+
+.listContasDisponiveis-banco {padding-left: 5px}
+tr td {
+	border-bottom: 1px solid #7EA5B8;
+	cursor: pointer;
+	text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+<form-validation>
+	<formset>		
+   		<form name="liberacaoCreditoForm">
+            <field property="pecr_nr_valortitulo"
+                	depends="float">
+               <arg key="label.vlTitulo"/>
+            </field>
+             <field property="licr_nr_valorproposta"
+                	depends="float">
+               <arg key="label.vlProposta"/>
+            </field>	          
+		</form>		
+	</formset>
+</form-validation>

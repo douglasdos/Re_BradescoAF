@@ -1,0 +1,23 @@
+div.list {
+	height: 130px;
+}
+
+.line, .inline {
+	width: 100%;
+}
+.list-identificacao-col-nome {
+	width: 40%;
+}
+.list-identificacao-col-cpfcnpj {
+	width: 15%;
+}
+.list-identificacao-col-dt-nascimento {
+	width: 20%;
+	text-align: center !important;
+}
+.list-identificacao-col-ddd {
+	width: 10px;
+}
+.list-identificacao-col-telefone {
+	width: 15%;
+}
